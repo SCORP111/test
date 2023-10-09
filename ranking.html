@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Gaia [10-4-20:1-3-1]</title>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="cache-control" content="max-age=0" />
+            <link rel="stylesheet" href="/build/339.d59f7a02.css">
+                    <link rel="stylesheet" href="/build/globalsuw.49ada790.css">
+            
+            
+        <script src="/build/runtime.9a71ee5d.js" defer></script><script src="/build/888.7cc4d866.js" defer></script><script src="/build/678.b3a081e5.js" defer></script><script src="/build/appGame.5da4fd20.js" defer></script>
+    </head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="text-bg-dark py-1 headerNavigation">
+    <div class="container navpanel">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <ul class="nav justify-content-start">
+                    <li class="nav-item" title="Server Time GMT+2">
+                        <span class="px-3"><i class="fa-solid fa-clock"></i> <span id="gameDate"></span> <span id="gameClock" data-serverTime="1696877325">00:00:00</span></span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="px-3" title="Current Server"><i class="fa-solid fa-atom"></i> #1 Era</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/game/ranking"><i class="fa-solid fa-chart-simple"></i> Ranking </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/3eDHmThaKf" target="_blank">Discord <i class="fa-brands fa-discord"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/game/settings">SCORP <i class="fa-solid fa-user-astronaut"></i></a>
+                    </li>
+                    <li class="nav-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <a class="nav-link" href="#">Quickpanel <i class="fa-solid fa-bolt-lightning"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-light pb-3">
+    <div class="container content">
+        <div class="row pb-1">
+            <div class="col-12">
+                <div class="alphaBox alphaBorder topGameNav">
+                    <div class="d-flex justify-content-between py-1 d-none d-sm-none d-md-none d-lg-flex d-xxl-flex">
+                        <div class="pt-1"></div>
+                        <div class="pt-1">
+                            <i class="fa-solid fa-sun"></i> System 10-4-20
+                        </div>
+                        <div class="pt-1">
+                            <select id="planetSelect" class="alphaBox m-0 px-1 border-0 bg-transparent"
+                                    onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                                <option selected>P: Gaia</option>
+                                                                                                                <option value="?sp=139704">
+                                                Isonoe [9-7-25:1-2-3]
+                                            </option>
+                                                                                <option value="?sp=155168">
+                                                Aegaeon [10-5-22:3-3-2]
+                                            </option>
+                                                                                <option value="?sp=219706">
+                                                Calypso [14-1-13:1-3-1]
+                                            </option>
+                                                                                <option value="?sp=158467">
+                                                Autonoe [10-10-20:1-2-1]
+                                            </option>
+                                                                                <option value="?sp=152392">
+                                                Cressida [10-1-20:1-2-1]
+                                            </option>
+                                                                                <option value="?sp=120667">
+                                                Adrastea [8-4-20:1-2-1]
+                                            </option>
+                                                                                <option value="?sp=155093">
+                                                Iapetus [10-5-20:1-2-2]
+                                            </option>
+                                                                                <option value="?sp=154572">
+                                                Callisto [10-4-25:3-2-3]
+                                            </option>
+                                                                                <option value="?sp=154437">
+                                                Io [10-4-20:3-2-3]
+                                            </option>
+                                                                                <option value="?sp=154420">
+                                                Gaia [10-4-20:1-3-1]
+                                            </option>
+                                                                                                </select>
+                        </div>
+                        <div class="pt-1">
+                            <i class="fa-solid fa-earth-asia"></i> Planet 1-3-1
+                        </div>
+                        <div class="pt-1"></div>
+                    </div>
+                    <div class="row d-flex d-sm-flex d-md-flex d-lg-none d-xxl-none text-center">
+                        <div class="col-6">
+                            <i class="fa-solid fa-sun"></i> System 10-4-20
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-earth-asia"></i> Planet 1-3-1
+                        </div>
+                        <div class="col-12">
+                            <select id="planetSelect" class="alphaBox m-0 px-1 border-0 bg-transparent"
+                                    onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                                <option selected>P: Gaia</option>
+                                                                                                            <option value="?sp=139704">
+                                            Isonoe [9-7-25:1-2-3]
+                                        </option>
+                                                                            <option value="?sp=155168">
+                                            Aegaeon [10-5-22:3-3-2]
+                                        </option>
+                                                                            <option value="?sp=219706">
+                                            Calypso [14-1-13:1-3-1]
+                                        </option>
+                                                                            <option value="?sp=158467">
+                                            Autonoe [10-10-20:1-2-1]
+                                        </option>
+                                                                            <option value="?sp=152392">
+                                            Cressida [10-1-20:1-2-1]
+                                        </option>
+                                                                            <option value="?sp=120667">
+                                            Adrastea [8-4-20:1-2-1]
+                                        </option>
+                                                                            <option value="?sp=155093">
+                                            Iapetus [10-5-20:1-2-2]
+                                        </option>
+                                                                            <option value="?sp=154572">
+                                            Callisto [10-4-25:3-2-3]
+                                        </option>
+                                                                            <option value="?sp=154437">
+                                            Io [10-4-20:3-2-3]
+                                        </option>
+                                                                            <option value="?sp=154420">
+                                            Gaia [10-4-20:1-3-1]
+                                        </option>
+                                                                                                </select>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+        <div class="row text-center resourceDisplay reDi pt-2">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 470.939/h<br/>Storage: 23M">
+                    <i class="fa-solid fa-cubes"></i> Aslit <span id="resOneCurr" class="lbr ucph " data-ratePerHour="470938.52163689" data-storage="23040000" data-baseValue="68516.583445035">68.517</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 310.974/h<br/>Storage: 15.4M">
+                    <i class="fa-solid fa-dice-d20"></i> Crlit <span id="resTwoCurr" class="lbr ucph " data-storage="15360000" data-ratePerHour="310973.98648095" data-baseValue="951701.74177905">951.702</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 91.577/h<br/>Storage: 10.2M">
+                    <i class="fa-solid fa-soap"></i> Iopla <span id="resThreeCurr" class="lbr ucph " data-ratePerHour="91576.796109769" data-storage="10240000" data-baseValue="796414.48270886">796.414</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 18.223/h<br/>Storage: 2.6M">
+                    <i class="fa-solid fa-hurricane"></i> SEM <span  id="resFourCurr" class="lbr ucph " data-ratePerHour="18223.009626406" data-storage="2560000" data-baseValue="170176.89358896">170.177</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="E-Gen: <span class='text-success'> 8.634</span> MW <br/>E-Use: <span class='text-error'> -8.081 </span> MW">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                                            Energy <span class="lbr">553</span>
+                                    </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 198/h">
+                    <i class="fa-solid fa-guarani-sign"></i> G.E.L.D. <span class="lbr ucph " data-ratePerHour="198.23261638416" data-baseValue="20160.169150182" title="Galactic Electronic Luminary Denomination">20.160</span>
+                </div>
+            </div>
+        </div>
+        <div class="row py-1">
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <div class="card alphaBox alphaBorder mb-3 pb-2">
+    <div class="card-header">
+        <div class="d-flex justify-content-center">
+            <span class="h6 mb-0 text-bold">PLANET</span>
+        </div>
+    </div>
+    <ul class="list-group list-group-flush gameNavigation">
+        <li class="list-group-item  nbg">
+            <a href="/game/command">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Overview
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/resources">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-shapes"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Resources
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/infrastructure">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Infrastructure
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/shipyard">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-shuttle-space"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Shipyard
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/defense">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Defense
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="card alphaBox alphaBorder mb-3 pb-2">
+    <div class="card-header">
+        <div class="d-flex justify-content-center">
+            <span class="h6 mb-0 text-bold">NETWORK</span>
+        </div>
+    </div>
+    <ul class="list-group list-group-flush gameNavigation">
+        <li class="list-group-item ">
+            <a href="/game/research">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-flask-vial"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Research
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/assembly">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-dice-d6"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Assembly
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/government">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-users-line"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Government
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/market">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-bitcoin-sign"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Market
+                    </div>
+                </div>
+            </a>
+        </li>
+            </ul>
+</div>
+<div class="card alphaBox alphaBorder mb-3 pb-2">
+    <div class="card-header">
+        <div class="d-flex justify-content-center">
+            <span class="h6 mb-0 text-bold">COMMS</span>
+        </div>
+    </div>
+    <ul class="list-group list-group-flush gameNavigation">
+        <li class="list-group-item ">
+            <a href="/game/fleet">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Fleet
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/fleetcontrol">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Fleet Movement
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/commander">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Commanders
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/records">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Reports (0)
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/galaxy">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Galaxy
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/inbox">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Inbox (0)
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/alliance">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Alliance
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/achievement">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Achievements
+                    </div>
+                </div>
+            </a>
+        </li>
+        <hr class="m-0 mx-2 bg-white">
+        <li class="list-group-item">
+            <a href="/game/version">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-file-pen"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Updates
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="/game/bugtracker">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-bugs"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Bugtracker
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="card alphaBox alphaBorder mb-3 py-2 text-center">
+    Online: 7<br/>
+    Load: 1,24%
+</div>            </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-8">
+                <div class="card alphaBox alphaBorder gameContentCard">
+                                            <div class="card-header text-center">
+                            <span class="h6 mb-0 text-bold">RANKING</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+    <div class="col-12 text-center">
+                                    <h4>Galaxy 1-100</h4>
+                        </div>
+    <div class="col-12 mb-3">
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <a href="/game/ranking/" class="btn btn-sm btn-light form-control ">Players</a>
+            </div>
+            <div class="col-3">
+                <a href="/game/ranking/alliance" class="btn btn-sm btn-light form-control">Alliance</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mb-3">
+        <div class="row justify-content-center text-center">
+            <div class="col-2">
+                <a href="/game/ranking/" class="btn btn-sm btn-primary form-control">Total</a>
+            </div>
+            <div class="col-2">
+                <a href="/game/ranking/fleet" class="btn btn-sm btn-primary form-control">Fleet</a>
+            </div>
+            <div class="col-2">
+                <a href="/game/ranking/economy" class="btn btn-sm btn-primary form-control">Economy</a>
+            </div>
+            <div class="col-2">
+                <a href="/game/ranking/infrastructure" class="btn btn-sm btn-primary form-control">Infrastructure</a>
+            </div>
+            <div class="col-2">
+                <a href="/game/ranking/research" class="btn btn-sm btn-primary form-control">Research</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row alphaBorder mx-1 mb-3">
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    01.
+                    <a href="/game/user/scorp"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="SCORP"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: IceA | Ice Angelz</br>Points: 393.919</br>Fleet: 53.331">
+                        SCORP
+                    </a>
+                </b>
+                                    [<a class="link-light link-ns" href="/game/alliance/page/icea">IceA</a>]
+                            </div>
+                            <div class="py-1 px-3">393.919 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=5720" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=2" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    02.
+                    <a href="/game/user/germancoastguard"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="GermanCoastguard"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: AYBABTU | All Your Base Are Belong To Us</br>Points: 340.180</br>Fleet: 58.653">
+                        GermanCoastguard
+                    </a>
+                </b>
+                                    [<a class="link-light link-ns" href="/game/alliance/page/aybabtu">AYBABTU</a>]
+                            </div>
+                            <div class="py-1 px-3">340.180 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=4102" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=9" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    03.
+                    <a href="/game/user/hakto"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Hakto"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: AYBABTU | All Your Base Are Belong To Us</br>Points: 242.764</br>Fleet: 36.739">
+                        Hakto
+                    </a>
+                </b>
+                                    [<a class="link-light link-ns" href="/game/alliance/page/aybabtu">AYBABTU</a>]
+                            </div>
+                            <div class="py-1 px-3">242.764 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=9421" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=1" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    04.
+                    <a href="/game/user/schnuffelmaus"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="SchnuffelMaus"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: A+M | Schnuffels</br>Points: 200.302</br>Fleet: 42.900">
+                        SchnuffelMaus
+                    </a>
+                </b>
+                                    [<a class="link-light link-ns" href="/game/alliance/page/a+m">A+M</a>]
+                            </div>
+                            <div class="py-1 px-3">200.302 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=5510" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=5" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    05.
+                    <a href="/game/user/feel"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Feel"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: IceA | Ice Angelz</br>Points: 168.581</br>Fleet: 28.350">
+                        Feel
+                    </a>
+                </b>
+                                    [<a class="link-light link-ns" href="/game/alliance/page/icea">IceA</a>]
+                            </div>
+                            <div class="py-1 px-3">168.581 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=5800" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=3" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    06.
+                    <a href="/game/user/zyrusz"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Zyrusz"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: AYBABTU | All Your Base Are Belong To Us</br>Points: 152.995</br>Fleet: 37.278">
+                        Zyrusz
+                    </a>
+                </b>
+                                    [<a class="link-light link-ns" href="/game/alliance/page/aybabtu">AYBABTU</a>]
+                            </div>
+                            <div class="py-1 px-3">152.995 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=8139" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=4" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    07.
+                    <a href="/game/user/mucha"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Mucha"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: EG | Evil Geniuses</br>Points: 64.223</br>Fleet: 0">
+                        Mucha
+                    </a>
+                </b>
+                                    [<a class="link-light link-ns" href="/game/alliance/page/eg">EG</a>]
+                            </div>
+                            <div class="py-1 px-3">64.223 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=665" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=7" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    08.
+                    <a href="/game/user/beram"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Beram"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: A+M | Schnuffels</br>Points: 46.425</br>Fleet: 2.367">
+                        Beram
+                    </a>
+                </b>
+                                    [<a class="link-light link-ns" href="/game/alliance/page/a+m">A+M</a>]
+                            </div>
+                            <div class="py-1 px-3">46.425 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=1453" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=10" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    09.
+                    <a href="/game/user/rance"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Rance"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: MAG | Miner AG</br>Points: 18.600</br>Fleet: 26">
+                        Rance
+                    </a>
+                </b>
+                                    [<a class="link-light link-ns" href="/game/alliance/page/mag">MAG</a>]
+                            </div>
+                            <div class="py-1 px-3">18.600 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=10700" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=6" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    10.
+                    <a href="/game/user/pay2winlover"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Pay2WinLover"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 11.029</br>Fleet: 0">
+                        Pay2WinLover
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">11.029 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=5633" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=8" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    11.
+                    <a href="/game/user/corax"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Corax"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 10.775</br>Fleet: 573">
+                        Corax
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">10.775 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=761" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=11" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    12.
+                    <a href="/game/user/aamanus"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Aamanus"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 8.517</br>Fleet: 39">
+                        Aamanus
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">8.517 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=10910" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=13" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    13.
+                    <a href="/game/user/solotalent"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="solotalent"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 5.840</br>Fleet: 1.155">
+                        solotalent
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">5.840 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=2349" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=17" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    14.
+                    <a href="/game/user/bones"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Bones"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: BLK | Black</br>Points: 5.529</br>Fleet: 1.690">
+                        Bones
+                    </a>
+                </b>
+                                    [<a class="link-light link-ns" href="/game/alliance/page/blk">BLK</a>]
+                            </div>
+                            <div class="py-1 px-3">5.529 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=12360" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=15" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    15.
+                    <a href="/game/user/andrrecraft"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="andrrecraft"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: Explorer</br>Alliance: None </br>Points: 5.428</br>Fleet: 74">
+                        andrrecraft
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">5.428 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=14965" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=19" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    16.
+                    <a href="/game/user/mongchengly"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="mongchengly"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 4.382</br>Fleet: 0">
+                        mongchengly
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">4.382 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=1200" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=22" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    17.
+                    <a href="/game/user/sertok"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Sertok"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: IceA | Ice Angelz</br>Points: 580</br>Fleet: 0">
+                        Sertok
+                    </a>
+                </b>
+                                    [<a class="link-light link-ns" href="/game/alliance/page/icea">IceA</a>]
+                            </div>
+                            <div class="py-1 px-3">580 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=7997" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=25" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    18.
+                    <a href="/game/user/folivora"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Folivora"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 197</br>Fleet: 0">
+                        Folivora
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">197 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=10837" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=16" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    19.
+                    <a href="/game/user/knut"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Knut"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 123</br>Fleet: 0">
+                        Knut
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">123 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=10831" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=23" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    20.
+                    <a href="/game/user/suppenverachter"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Suppenverachter"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 87</br>Fleet: 0">
+                        Suppenverachter
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">87 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=14404" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=12" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    21.
+                    <a href="/game/user/der bär "
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Der Bär "
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 42</br>Fleet: 0">
+                        Der Bär 
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">42 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=1776" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=24" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    22.
+                    <a href="/game/user/num7"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Num7"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 39</br>Fleet: 0">
+                        Num7
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">39 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=9515" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=14" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    23.
+                    <a href="/game/user/iuniverse"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="iUniverse"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 1</br>Fleet: 0">
+                        iUniverse
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">1 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=11544" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=18" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    24.
+                    <a href="/game/user/navy"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="navy"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 1</br>Fleet: 0">
+                        navy
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">1 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=7477" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=21" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex alphaBox">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    25.
+                    <a href="/game/user/notjoe"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="notjoe"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 0</br>Fleet: 0">
+                        notjoe
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">0 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=13008" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=20" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+                    
+        <div class="d-flex ">
+            <div class="me-auto py-1 px-3">
+                <b>
+                                        <i class="fa-solid fa-minus"></i>
+                    26.
+                    <a href="/game/user/mewtopia"
+                       class="text-secondary link-light"
+                       target="_blank"
+                       data-bs-toggle="popover"
+                       data-bs-trigger="hover focus"
+                       data-bs-title="Mewtopia"
+                       data-bs-html="true"
+                       data-bs-content="System: </br>Title: None</br>Alliance: None </br>Points: 0</br>Fleet: 0">
+                        Mewtopia
+                    </a>
+                </b>
+                                            </div>
+                            <div class="py-1 px-3">0 Points</div>
+                        <div class="py-1 px-3 text-light">
+                <a href="/game/galaxy?sid=7326" class="link-light">
+                    <i class="fa-solid fa-location-pin"></i>
+                </a>
+                <a href="/game/inbox/write?uid=26" class="link-light"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="link-light"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+    </div>                        </div>
+                                    </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <div class="card alphaBox alphaBorder gameContentCard">
+                    <div class="row p-2">
+                        <span class="bt text-center mb-2">PLANETS</span>
+                                                    <a href="?sp=139704" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 19.085<br/>C: 9.802<br/>I: 0<br/>S: 0<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Isonoe<br/>
+                                    9-7-25:1-2-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=155168" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 165.512<br/>C: 235.688<br/>I: 93.493<br/>S: 7.438<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Aegaeon<br/>
+                                    10-5-22:3-3-2
+                                </div>
+                            </a>
+                                                    <a href="?sp=219706" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 210.897<br/>C: 348.908<br/>I: 242.105<br/>S: 15.955<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Calypso<br/>
+                                    14-1-13:1-3-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=158467" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 491.887<br/>C: 591.977<br/>I: 800.643<br/>S: 9.257<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Autonoe<br/>
+                                    10-10-20:1-2-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=152392" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 310.987<br/>C: 26.066<br/>I: 283.743<br/>S: 24.608<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Cressida<br/>
+                                    10-1-20:1-2-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=120667" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 1.046.080<br/>C: 506.447<br/>I: 154.791<br/>S: 68.672<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Adrastea<br/>
+                                    8-4-20:1-2-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=155093" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 27.672<br/>C: 1.023.555<br/>I: 3.111<br/>S: 21.894<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Iapetus<br/>
+                                    10-5-20:1-2-2
+                                </div>
+                            </a>
+                                                    <a href="?sp=154572" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 334.284<br/>C: 127.540<br/>I: 419.802<br/>S: 9.723<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Callisto<br/>
+                                    10-4-25:3-2-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=154437" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 496.720<br/>C: 63.938<br/>I: 2.196<br/>S: 26.906<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Io<br/>
+                                    10-4-20:3-2-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=154420" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 68.517<br/>C: 951.702<br/>I: 796.414<br/>S: 170.177<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBoxDense">
+                                    Gaia<br/>
+                                    10-4-20:1-3-1
+                                </div>
+                            </a>
+                                            </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start alphaBoxDense" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+     id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Quickpanel Overview <i
+                    class="fa-solid fa-bolt-lightning"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Currently no abnormal activities.</p>
+    </div>
+</div>
+
+<div class="text-light mb-3">
+    <div class="container footer">
+        <hr/>
+        <div class="d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg text-center footer-nav my-0 py-0">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="/tac">Terms & Conditions</a>
+                    <a class="nav-link" href="https://discord.com/invite/CqGdCY5BKy" target="_blank">Contact</a>
+                    <a class="nav-link" href="/game/wiki">Wiki</a>
+                </div>
+            </nav>
+        </div>
+        <div class="col-12 text-center">
+            <span>VoidVerse - v0.0.03a | Copyright © 2023 Hakto</span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="toast-wrapper">
+    <div class="toast align-items-center" role="alert">
+        <div class="d-flex">
+            <div class="toast-body">
+
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
