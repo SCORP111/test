@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Gaia [10-4-20:1-3-1]</title>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="cache-control" content="max-age=0" />
+            <link rel="stylesheet" href="/build/339.d59f7a02.css">
+                    <link rel="stylesheet" href="/build/globalsuw.d623a9bf.css">
+            
+            
+        <script src="/build/runtime.9a71ee5d.js" defer></script><script src="/build/888.7cc4d866.js" defer></script><script src="/build/678.b3a081e5.js" defer></script><script src="/build/appGame.5da4fd20.js" defer></script>
+    </head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="text-bg-dark py-1 headerNavigation">
+    <div class="container navpanel">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <ul class="nav justify-content-start">
+                    <li class="nav-item" title="Server Time GMT+2">
+                        <span class="px-3"><i class="fa-solid fa-clock"></i> <span id="gameDate"></span> <span id="gameClock" data-serverTime="1697382571">00:00:00</span></span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="px-3" title="Current Server"><i class="fa-solid fa-atom"></i> #1 Era</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/game/ranking"><i class="fa-solid fa-chart-simple"></i> Ranking </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/3eDHmThaKf" target="_blank">Discord <i class="fa-brands fa-discord"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/game/settings">SCORP <i class="fa-solid fa-user-astronaut"></i></a>
+                    </li>
+                    <li class="nav-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <a class="nav-link" href="#">Quickpanel <i class="fa-solid fa-bolt-lightning"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-light pb-3">
+    <div class="container content">
+        <div class="row pb-1">
+            <div class="col-12">
+                <div class="alphaBox alphaBorder topGameNav">
+                    <div class="d-flex justify-content-between py-1 d-none d-sm-none d-md-none d-lg-flex d-xxl-flex">
+                        <div class="pt-1"></div>
+                        <div class="pt-1">
+                            <i class="fa-solid fa-sun"></i> System 10-4-20
+                        </div>
+                        <div class="pt-1">
+                            <select id="planetSelect" class="alphaBox m-0 px-1 border-0 bg-transparent"
+                                    onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                                <option selected>P: Gaia</option>
+                                                                                                                <option value="?sp=421252">
+                                                Cyllene [25-25-2:3-3-1]
+                                            </option>
+                                                                                <option value="?sp=219722">
+                                                Carpo [14-1-13:3-2-2]
+                                            </option>
+                                                                                <option value="?sp=131878">
+                                                Aitne [8-21-10:2-1-1]
+                                            </option>
+                                                                                <option value="?sp=171312">
+                                                Albiorix [11-4-20:3-2-3]
+                                            </option>
+                                                                                <option value="?sp=93861">
+                                                Aegir [6-15-2:1-3-3]
+                                            </option>
+                                                                                <option value="?sp=139704">
+                                                Isonoe [9-7-25:1-2-3]
+                                            </option>
+                                                                                <option value="?sp=155168">
+                                                Aegaeon [10-5-22:3-3-2]
+                                            </option>
+                                                                                <option value="?sp=219706">
+                                                Calypso [14-1-13:1-3-1]
+                                            </option>
+                                                                                <option value="?sp=158467">
+                                                Autonoe [10-10-20:1-2-1]
+                                            </option>
+                                                                                <option value="?sp=152392">
+                                                Cressida [10-1-20:1-2-1]
+                                            </option>
+                                                                                <option value="?sp=120667">
+                                                Adrastea [8-4-20:1-2-1]
+                                            </option>
+                                                                                <option value="?sp=155093">
+                                                Iapetus [10-5-20:1-2-2]
+                                            </option>
+                                                                                <option value="?sp=154572">
+                                                Callisto [10-4-25:3-2-3]
+                                            </option>
+                                                                                <option value="?sp=154437">
+                                                Io [10-4-20:3-2-3]
+                                            </option>
+                                                                                <option value="?sp=154420">
+                                                Gaia [10-4-20:1-3-1]
+                                            </option>
+                                                                                                </select>
+                        </div>
+                        <div class="pt-1">
+                            <i class="fa-solid fa-earth-asia"></i> Planet 1-3-1
+                        </div>
+                        <div class="pt-1"></div>
+                    </div>
+                    <div class="row d-flex d-sm-flex d-md-flex d-lg-none d-xxl-none text-center">
+                        <div class="col-6">
+                            <i class="fa-solid fa-sun"></i> System 10-4-20
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-earth-asia"></i> Planet 1-3-1
+                        </div>
+                        <div class="col-12">
+                            <select id="planetSelect" class="alphaBox m-0 px-1 border-0 bg-transparent"
+                                    onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                                <option selected>P: Gaia</option>
+                                                                                                            <option value="?sp=421252">
+                                            Cyllene [25-25-2:3-3-1]
+                                        </option>
+                                                                            <option value="?sp=219722">
+                                            Carpo [14-1-13:3-2-2]
+                                        </option>
+                                                                            <option value="?sp=131878">
+                                            Aitne [8-21-10:2-1-1]
+                                        </option>
+                                                                            <option value="?sp=171312">
+                                            Albiorix [11-4-20:3-2-3]
+                                        </option>
+                                                                            <option value="?sp=93861">
+                                            Aegir [6-15-2:1-3-3]
+                                        </option>
+                                                                            <option value="?sp=139704">
+                                            Isonoe [9-7-25:1-2-3]
+                                        </option>
+                                                                            <option value="?sp=155168">
+                                            Aegaeon [10-5-22:3-3-2]
+                                        </option>
+                                                                            <option value="?sp=219706">
+                                            Calypso [14-1-13:1-3-1]
+                                        </option>
+                                                                            <option value="?sp=158467">
+                                            Autonoe [10-10-20:1-2-1]
+                                        </option>
+                                                                            <option value="?sp=152392">
+                                            Cressida [10-1-20:1-2-1]
+                                        </option>
+                                                                            <option value="?sp=120667">
+                                            Adrastea [8-4-20:1-2-1]
+                                        </option>
+                                                                            <option value="?sp=155093">
+                                            Iapetus [10-5-20:1-2-2]
+                                        </option>
+                                                                            <option value="?sp=154572">
+                                            Callisto [10-4-25:3-2-3]
+                                        </option>
+                                                                            <option value="?sp=154437">
+                                            Io [10-4-20:3-2-3]
+                                        </option>
+                                                                            <option value="?sp=154420">
+                                            Gaia [10-4-20:1-3-1]
+                                        </option>
+                                                                                                </select>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+        <div class="row text-center resourceDisplay reDi pt-2">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 257.892.980/h<br/>Storage: 2.9B">
+                    <i class="fa-solid fa-cubes"></i> Aslit <span id="resOneCurr" class="lbr ucph " data-ratePerHour="257892979.53692" data-storage="2949120000" data-baseValue="269965136.36065">269.965.136</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 259.334.927/h<br/>Storage: 2B">
+                    <i class="fa-solid fa-dice-d20"></i> Crlit <span id="resTwoCurr" class="lbr ucph " data-storage="1966080000" data-ratePerHour="259334926.75211" data-baseValue="321127508.19522">321.127.508</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 158.068.255/h<br/>Storage: 1.3B">
+                    <i class="fa-solid fa-soap"></i> Iopla <span id="resThreeCurr" class="lbr ucph " data-ratePerHour="158068254.96007" data-storage="1310720000" data-baseValue="430180273.44032">430.180.273</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 29.315.688/h<br/>Storage: 328M">
+                    <i class="fa-solid fa-hurricane"></i> SEM <span  id="resFourCurr" class="lbr ucph " data-ratePerHour="29315688.077681" data-storage="327680000" data-baseValue="663047.763922">663.048</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="E-Gen: <span class='text-success'> 11.947</span> MW <br/>E-Use: <span class='text-error'> -11.668 </span> MW">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                                            Energy <span class="lbr">279</span>
+                                    </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 187/h">
+                    <i class="fa-solid fa-guarani-sign"></i> G.E.L.D. <span class="lbr ucph " data-ratePerHour="186.63664663892" data-baseValue="43919.191123" title="Galactic Electronic Luminary Denomination">43.919</span>
+                </div>
+            </div>
+        </div>
+        <div class="row py-1">
+            <div class="col-12">
+                <div class="alphaBox alphaBorder p-2 text-center">
+                    <span>Full testmode activated (500x res, low buildtime, low flight time), since some players decided to "test" a bug with 400m+ resources ;(</span><br/>
+                    <span>Feel free to test Fleetconstruction etc. - </span><span class="text-warning">Noobprotection disabled now.</span>
+                </div>
+            </div>
+        </div>
+        <div class="row py-1">
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <div class="card alphaBox alphaBorder mb-3 pb-2">
+    <div class="card-header">
+        <div class="d-flex justify-content-center">
+            <span class="h6 mb-0 text-bold">PLANET</span>
+        </div>
+    </div>
+    <ul class="list-group list-group-flush gameNavigation">
+        <li class="list-group-item  nbg">
+            <a href="/game/command">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Overview
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item active">
+            <a href="/game/resources">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-shapes"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Resources
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/infrastructure">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Infrastructure
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/shipyard">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-shuttle-space"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Shipyard
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/defense">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Defense
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="card alphaBox alphaBorder mb-3 pb-2">
+    <div class="card-header">
+        <div class="d-flex justify-content-center">
+            <span class="h6 mb-0 text-bold">NETWORK</span>
+        </div>
+    </div>
+    <ul class="list-group list-group-flush gameNavigation">
+        <li class="list-group-item ">
+            <a href="/game/research">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-flask-vial"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Research
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/assembly">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-dice-d6"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Assembly
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/government">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-users-line"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Government
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/market">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-bitcoin-sign"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Market
+                    </div>
+                </div>
+            </a>
+        </li>
+            </ul>
+</div>
+<div class="card alphaBox alphaBorder mb-3 pb-2">
+    <div class="card-header">
+        <div class="d-flex justify-content-center">
+            <span class="h6 mb-0 text-bold">COMMS</span>
+        </div>
+    </div>
+    <ul class="list-group list-group-flush gameNavigation">
+        <li class="list-group-item ">
+            <a href="/game/fleet">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Fleet
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/fleetcontrol">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Fleet Movement
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/commander">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Commanders
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/records">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Reports (0)
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/galaxy">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Galaxy
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/inbox">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Inbox (0)
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/alliance">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Alliance
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/achievement">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Achievements
+                    </div>
+                </div>
+            </a>
+        </li>
+        <hr class="m-0 mx-2 bg-white">
+        <li class="list-group-item">
+            <a href="/game/version">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-file-pen"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Updates
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="/game/bugtracker">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-bugs"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Bugtracker
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="card alphaBox alphaBorder mb-3 py-2 text-center">
+    Online: 4<br/>
+    Load: 1,37%
+</div>            </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-8">
+                <div class="card alphaBox alphaBorder gameContentCard">
+                                            <div class="card-header text-center">
+                            <span class="h6 mb-0 text-bold">RESOURCES</span>
+                        </div>
+                        <div class="card-body">
+                            <form method="post">
+    <div class="row py-2 contentWrapper">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-uw-3 mb-3">
+                            <div class="card buildQueue">
+                    <div class="imageWrapper">
+                        <img src="../../images/resource/resource_mineA.webp" class="card-img-top" loading="lazy"
+                             data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                             data-bs-content="The Aslit mine provides a metal mixture, which is of the ACIS resources in this universe, required for almost everything. ">
+                                                <div class="infoOverlay">
+                            <strong>Aslit Mine</strong>
+                        </div>
+                    </div>
+                    <div class="card-body disabled ">
+
+                                                    <div class="row mt-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="w-100 text-end">
+                                                                                    <i class="fa-solid fa-cubes"></i> <span title="3.049.380 Aslit">3M</span>
+                                                                                                                            <i class="fa-solid fa-dice-d20"></i> <span title="609.876 Crlit">610K</span>
+                                                                                                                                                            </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="flex-grow-1">
+                                                                                    <i class="fa-solid fa-bolt-lightning"></i> <span class="text-warning" title="180 Energy">↓180</span>
+                                        
+                                                                            </div>
+                                    <div class="text-end">
+                                                                                    <i class="fa-solid fa-clock"></i> 06S
+                                                                            </div>
+                                </div>
+                            </div>
+                        
+                        <div class="d-flex align-items-center mb-1">
+                            <div class="col-5">
+                                <strong>Lv31</strong> <a href="#" class="text-info" title="Production Table"><i class="fa-solid fa-chart-simple"></i></a>
+                                                            </div>
+                            <div class="col-2 text-center ps-1">
+                                                                                                            <button type="submit" name="downgrade" id="downgrade" value="rminea" class="btn btn-sm btn-outline-primary form-control border-warning-subtle" title="Downgrade">
+                                            <i class="fa-solid fa-angles-down"></i>
+                                        </button>
+                                                                                                </div>
+                            <div class="col-5 align-content-end ps-2">
+                                                                    <button type="submit" name="upgradeResource" value="rminea" class="btn btn-sm btn-outline-primary form-control border-success-subtle">Build</button>
+                                                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-uw-3 mb-3">
+                            <div class="card buildQueue">
+                    <div class="imageWrapper">
+                        <img src="../../images/resource/resource_mineB.webp" class="card-img-top" loading="lazy"
+                             data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                             data-bs-content="The Crlit mine provides crystals, one of the ACIS resources in this universe, required for almost everything. ">
+                                                <div class="infoOverlay">
+                            <strong>Crlit Mine</strong>
+                        </div>
+                    </div>
+                    <div class="card-body disabled ">
+
+                                                    <div class="row mt-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="w-100 text-end">
+                                                                                    <i class="fa-solid fa-cubes"></i> <span title="1.901.541 Aslit">1.9M</span>
+                                                                                                                            <i class="fa-solid fa-dice-d20"></i> <span title="656.896 Crlit">657K</span>
+                                                                                                                                                            </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="flex-grow-1">
+                                                                                    <i class="fa-solid fa-bolt-lightning"></i> <span class="text-warning" title="170 Energy">↓170</span>
+                                        
+                                                                            </div>
+                                    <div class="text-end">
+                                                                                    <i class="fa-solid fa-clock"></i> 03S
+                                                                            </div>
+                                </div>
+                            </div>
+                        
+                        <div class="d-flex align-items-center mb-1">
+                            <div class="col-5">
+                                <strong>Lv29</strong> <a href="#" class="text-info" title="Production Table"><i class="fa-solid fa-chart-simple"></i></a>
+                                                            </div>
+                            <div class="col-2 text-center ps-1">
+                                                                                                            <button type="submit" name="downgrade" id="downgrade" value="rmineb" class="btn btn-sm btn-outline-primary form-control border-warning-subtle" title="Downgrade">
+                                            <i class="fa-solid fa-angles-down"></i>
+                                        </button>
+                                                                                                </div>
+                            <div class="col-5 align-content-end ps-2">
+                                                                    <button type="submit" name="upgradeResource" value="rmineb" class="btn btn-sm btn-outline-primary form-control border-success-subtle">Build</button>
+                                                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-uw-3 mb-3">
+                            <div class="card buildQueue">
+                    <div class="imageWrapper">
+                        <img src="../../images/resource/resource_mineC.webp" class="card-img-top" loading="lazy"
+                             data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                             data-bs-content="The Iopla mine provides ion plasma, one of the ACIS resources in this universe, required for almost everything. ">
+                                                <div class="infoOverlay">
+                            <strong>Iopla Mine</strong>
+                        </div>
+                    </div>
+                    <div class="card-body disabled ">
+
+                                                    <div class="row mt-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="w-100 text-end">
+                                                                                    <i class="fa-solid fa-cubes"></i> <span title="2.553.799 Aslit">2.6M</span>
+                                                                                                                            <i class="fa-solid fa-dice-d20"></i> <span title="1.418.777 Crlit">1.4M</span>
+                                                                                                                                                            </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="flex-grow-1">
+                                                                                    <i class="fa-solid fa-bolt-lightning"></i> <span class="text-warning" title="171 Energy">↓171</span>
+                                        
+                                                                            </div>
+                                    <div class="text-end">
+                                                                                    <i class="fa-solid fa-clock"></i> 03S
+                                                                            </div>
+                                </div>
+                            </div>
+                        
+                        <div class="d-flex align-items-center mb-1">
+                            <div class="col-5">
+                                <strong>Lv28</strong> <a href="#" class="text-info" title="Production Table"><i class="fa-solid fa-chart-simple"></i></a>
+                                                            </div>
+                            <div class="col-2 text-center ps-1">
+                                                                                                            <button type="submit" name="downgrade" id="downgrade" value="rminec" class="btn btn-sm btn-outline-primary form-control border-warning-subtle" title="Downgrade">
+                                            <i class="fa-solid fa-angles-down"></i>
+                                        </button>
+                                                                                                </div>
+                            <div class="col-5 align-content-end ps-2">
+                                                                    <button type="submit" name="upgradeResource" value="rminec" class="btn btn-sm btn-outline-primary form-control border-success-subtle">Build</button>
+                                                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-uw-3 mb-3">
+                            <div class="card buildQueue">
+                    <div class="imageWrapper">
+                        <img src="../../images/resource/resource_mineD.webp" class="card-img-top" loading="lazy"
+                             data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                             data-bs-content="The SEM Factory provides Stellar Energy Modules, an energy module, which is also used as fuel for most engines. &lt;br/&gt;&lt;br/&gt;&lt;span class=&#039;text-danger&#039;&gt;Requires&lt;/span&gt;: &lt;br/&gt; Energy Research Lv4">
+                                                <div class="infoOverlay">
+                            <strong>SEM Factory</strong>
+                        </div>
+                    </div>
+                    <div class="card-body disabled ">
+
+                                                    <div class="row mt-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="w-100 text-end">
+                                                                                    <i class="fa-solid fa-cubes"></i> <span title="1.050.689.366 Aslit"><span class="text-insuff">1.1B</span></span>
+                                                                                                                            <i class="fa-solid fa-dice-d20"></i> <span title="525.344.683 Crlit"><span class="text-insuff">525M</span></span>
+                                                                                                                            <i class="fa-solid fa-soap"></i> <span title="420.275.746 Iopla">420M</span>
+                                                                                                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="flex-grow-1">
+                                                                                    <i class="fa-solid fa-bolt-lightning"></i> <span class="text-warning" title="314 Energy">↓314</span>
+                                        
+                                                                            </div>
+                                    <div class="text-end">
+                                                                                    <i class="fa-solid fa-clock"></i> 06M 27S
+                                                                            </div>
+                                </div>
+                            </div>
+                        
+                        <div class="d-flex align-items-center mb-1">
+                            <div class="col-5">
+                                <strong>Lv30</strong> <a href="#" class="text-info" title="Production Table"><i class="fa-solid fa-chart-simple"></i></a>
+                                                            </div>
+                            <div class="col-2 text-center ps-1">
+                                                                                                            <button type="submit" name="downgrade" id="downgrade" value="rmined" class="btn btn-sm btn-outline-primary form-control border-warning-subtle" title="Downgrade">
+                                            <i class="fa-solid fa-angles-down"></i>
+                                        </button>
+                                                                                                </div>
+                            <div class="col-5 align-content-end ps-2">
+                                                                    <button type="submit" name="upgradeResource" value="rmined" class="btn btn-sm btn-outline-primary form-control border-success-subtle">Build</button>
+                                                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-uw-3 mb-3">
+                            <div class="card buildQueue">
+                    <div class="imageWrapper">
+                        <img src="../../images/resource/resource_solarFarm.webp" class="card-img-top" loading="lazy"
+                             data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                             data-bs-content="Basic energy generation doesn’t use any resources to run, except for planetary fields. ">
+                                                <div class="infoOverlay">
+                            <strong>Solar Farm</strong>
+                        </div>
+                    </div>
+                    <div class="card-body disabled ">
+
+                                                    <div class="row mt-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="w-100 text-end">
+                                                                                    <i class="fa-solid fa-cubes"></i> <span title="171.327 Aslit">171K</span>
+                                                                                                                            <i class="fa-solid fa-dice-d20"></i> <span title="53.845 Crlit">53.8K</span>
+                                                                                                                                                            </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="flex-grow-1">
+                                        
+                                                                                    <i class="fa-solid fa-bolt-lightning"></i> <span class="text-powerg" title="223 Energy">↑223</span>
+                                                                            </div>
+                                    <div class="text-end">
+                                                                                    <i class="fa-solid fa-clock"></i> 01S
+                                                                            </div>
+                                </div>
+                            </div>
+                        
+                        <div class="d-flex align-items-center mb-1">
+                            <div class="col-5">
+                                <strong>Lv21</strong> <a href="#" class="text-info" title="Production Table"><i class="fa-solid fa-chart-simple"></i></a>
+                                                            </div>
+                            <div class="col-2 text-center ps-1">
+                                                                                                            <button type="submit" name="downgrade" id="downgrade" value="rsf" class="btn btn-sm btn-outline-primary form-control border-warning-subtle" title="Downgrade">
+                                            <i class="fa-solid fa-angles-down"></i>
+                                        </button>
+                                                                                                </div>
+                            <div class="col-5 align-content-end ps-2">
+                                                                    <button type="submit" name="upgradeResource" value="rsf" class="btn btn-sm btn-outline-primary form-control border-success-subtle">Build</button>
+                                                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-uw-3 mb-3">
+                            <div class="card buildQueue">
+                    <div class="imageWrapper">
+                        <img src="../../images/resource/resource_fusionReactor.webp" class="card-img-top" loading="lazy"
+                             data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                             data-bs-content="The fusion reactor power plant provides energy by using up SEM. Be careful with your SEM production! &lt;br/&gt;&lt;br/&gt;&lt;span class=&#039;text-danger&#039;&gt;Requires&lt;/span&gt;: &lt;br/&gt; Energy Research Lv6">
+                                                <div class="infoOverlay">
+                            <strong>Fusion Reactor</strong>
+                        </div>
+                    </div>
+                    <div class="card-body disabled ">
+
+                                                    <div class="row mt-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="w-100 text-end">
+                                                                                    <i class="fa-solid fa-cubes"></i> <span title="120 Aslit">120</span>
+                                                                                                                            <i class="fa-solid fa-dice-d20"></i> <span title="40 Crlit">40</span>
+                                                                                                                            <i class="fa-solid fa-soap"></i> <span title="25 Iopla">25</span>
+                                                                                                                            <i class="fa-solid fa-hurricane"></i> <span title="8 SEM">8</span>
+                                                                            </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="flex-grow-1">
+                                        
+                                                                                    <i class="fa-solid fa-bolt-lightning"></i> <span class="text-powerg" title="164 Energy">↑164</span>
+                                                                            </div>
+                                    <div class="text-end">
+                                                                                    <i class="fa-solid fa-clock"></i> 01S
+                                                                            </div>
+                                </div>
+                            </div>
+                        
+                        <div class="d-flex align-items-center mb-1">
+                            <div class="col-5">
+                                <strong>Lv0</strong> <a href="#" class="text-info" title="Production Table"><i class="fa-solid fa-chart-simple"></i></a>
+                                                            </div>
+                            <div class="col-2 text-center ps-1">
+                                                                                                                                </div>
+                            <div class="col-5 align-content-end ps-2">
+                                                                    <button type="submit" name="upgradeResource" value="rfr" class="btn btn-sm btn-outline-primary form-control border-success-subtle">Build</button>
+                                                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-uw-3 mb-3">
+                            <div class="card buildQueue">
+                    <div class="imageWrapper">
+                        <img src="../../images/resource/resource_thermalBorehole.webp" class="card-img-top" loading="lazy"
+                             data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                             data-bs-content="The thermal borehole generates a massive structure to provide all ACI resources and energy. &lt;br/&gt;&lt;br/&gt;&lt;span class=&#039;text-danger&#039;&gt;Requires&lt;/span&gt;: &lt;br/&gt; Energy Research Lv16&lt;br/&gt;Robot Engineering Lv7">
+                                                <div class="pulseOverlay pulsating">
+                            <span data-unixSeconds="1681" class="cntd alphaBoxDark alphaBorder px-2" data-rldt="true" title="Duration"></span>
+                        </div>
+                                                <div class="infoOverlay">
+                            <strong>Thermal Borehole</strong>
+                        </div>
+                    </div>
+                    <div class="card-body disabled inConstruction">
+
+                                                    <div class="row mt-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="w-100 text-end">
+                                                                                    <i class="fa-solid fa-cubes"></i> <span title="246.900.312 Aslit">247M</span>
+                                                                                                                            <i class="fa-solid fa-dice-d20"></i> <span title="129.061.526 Crlit">129M</span>
+                                                                                                                            <i class="fa-solid fa-soap"></i> <span title="67.336.448 Iopla">67.3M</span>
+                                                                                                                            <i class="fa-solid fa-hurricane"></i> <span title="22.445.482 SEM"><span class="text-insuff">22.4M</span></span>
+                                                                            </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="flex-grow-1">
+                                        
+                                                                                    <i class="fa-solid fa-bolt-lightning"></i> <span class="text-powerg" title="681 Energy">↑681</span>
+                                                                            </div>
+                                    <div class="text-end">
+                                                                                    <i class="fa-solid fa-clock"></i> 28M 00S
+                                                                            </div>
+                                </div>
+                            </div>
+                        
+                        <div class="d-flex align-items-center mb-1">
+                            <div class="col-5">
+                                <strong>Lv23</strong> <a href="#" class="text-info" title="Production Table"><i class="fa-solid fa-chart-simple"></i></a>
+                                                            </div>
+                            <div class="col-2 text-center ps-1">
+                                
+                                                            </div>
+                            <div class="col-5 align-content-end ps-2">
+                                                                    <button type="submit" name="cancelResource" value="rtb" class="btn btn-sm btn-outline-primary form-control" title="Cancel for 25% costs">Cancel</button>
+                                                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-uw-3 mb-3">
+                            <div class="card buildQueue">
+                    <div class="imageWrapper">
+                        <img src="../../images/resource/resource_systemEnergyGrid.webp" class="card-img-top" loading="lazy"
+                             data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                             data-bs-content="Connects the energy of all own planets in the current solar system. Lv10 establishes a Dyson Ring connection. &lt;br/&gt;&lt;br/&gt;&lt;span class=&#039;text-danger&#039;&gt;Requires&lt;/span&gt;: &lt;br/&gt; Energy Grid System Lv1">
+                                                <div class="infoOverlay">
+                            <strong>System Energy Grid</strong>
+                        </div>
+                    </div>
+                    <div class="card-body disabled ">
+
+                                                    <div class="row mt-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="w-100 text-end">
+                                                                                    <i class="fa-solid fa-cubes"></i> <span title="50.000 Aslit">50K</span>
+                                                                                                                            <i class="fa-solid fa-dice-d20"></i> <span title="25.000 Crlit">25K</span>
+                                                                                                                            <i class="fa-solid fa-soap"></i> <span title="25.000 Iopla">25K</span>
+                                                                                                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="flex-grow-1">
+                                        
+                                                                            </div>
+                                    <div class="text-end">
+                                                                                    <i class="fa-solid fa-clock"></i> 01S
+                                                                            </div>
+                                </div>
+                            </div>
+                        
+                        <div class="d-flex align-items-center mb-1">
+                            <div class="col-5">
+                                <strong>Lv0</strong> <a href="#" class="text-info" title="Production Table"><i class="fa-solid fa-chart-simple"></i></a>
+                                                            </div>
+                            <div class="col-2 text-center ps-1">
+                                                                                                                                </div>
+                            <div class="col-5 align-content-end ps-2">
+                                                                    <button type="submit" name="upgradeResource" value="rseg" class="btn btn-sm btn-outline-primary form-control border-success-subtle">Build</button>
+                                                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-uw-3 mb-3">
+                            <div class="card buildQueue">
+                    <div class="imageWrapper">
+                        <img src="../../images/resource/resource_default.webp" class="card-img-top" loading="lazy"
+                             data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                             data-bs-content="Increases the planetary bonus resource gain on this planet by 1%. Has no effect on your home planet! ">
+                                                <div class="infoOverlay">
+                            <strong>Planet Resource Lab</strong>
+                        </div>
+                    </div>
+                    <div class="card-body disabled ">
+
+                                                    <div class="row mt-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="w-100 text-end">
+                                                                                    <i class="fa-solid fa-cubes"></i> <span title="3.000 Aslit">3K</span>
+                                                                                                                            <i class="fa-solid fa-dice-d20"></i> <span title="3.000 Crlit">3K</span>
+                                                                                                                                                                    <i class="fa-solid fa-hurricane"></i> <span title="300 SEM">300</span>
+                                                                            </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="flex-grow-1">
+                                                                                    <i class="fa-solid fa-bolt-lightning"></i> <span class="text-warning" title="88 Energy">↓88</span>
+                                        
+                                                                            </div>
+                                    <div class="text-end">
+                                                                                    <i class="fa-solid fa-clock"></i> 01S
+                                                                            </div>
+                                </div>
+                            </div>
+                        
+                        <div class="d-flex align-items-center mb-1">
+                            <div class="col-5">
+                                <strong>Lv0</strong> <a href="#" class="text-info" title="Production Table"><i class="fa-solid fa-chart-simple"></i></a>
+                                                            </div>
+                            <div class="col-2 text-center ps-1">
+                                                                                                                                </div>
+                            <div class="col-5 align-content-end ps-2">
+                                                                    <button type="submit" name="upgradeResource" value="rsp" class="btn btn-sm btn-outline-primary form-control border-success-subtle">Build</button>
+                                                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-uw-3 mb-3">
+                            <div class="card buildQueue">
+                    <div class="imageWrapper">
+                        <img src="../../images/resource/resource_governmentCenter.webp" class="card-img-top" loading="lazy"
+                             data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                             data-bs-content="Government Centers generate G.E.L.D. currency, required for scans, surveys, commanders or speeding up projects. ">
+                                                <div class="infoOverlay">
+                            <strong>Government Center</strong>
+                        </div>
+                    </div>
+                    <div class="card-body disabled ">
+
+                                                    <div class="row mt-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="w-100 text-end">
+                                                                                    <i class="fa-solid fa-cubes"></i> <span title="1.687 Aslit">1.7K</span>
+                                                                                                                            <i class="fa-solid fa-dice-d20"></i> <span title="1.687 Crlit">1.7K</span>
+                                                                                                                            <i class="fa-solid fa-soap"></i> <span title="1.687 Iopla">1.7K</span>
+                                                                                                                            <i class="fa-solid fa-hurricane"></i> <span title="1.687 SEM">1.7K</span>
+                                                                            </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="flex-grow-1">
+                                                                                    <i class="fa-solid fa-bolt-lightning"></i> <span class="text-warning" title="189 Energy">↓189</span>
+                                        
+                                                                            </div>
+                                    <div class="text-end">
+                                                                                    <i class="fa-solid fa-clock"></i> 01S
+                                                                            </div>
+                                </div>
+                            </div>
+                        
+                        <div class="d-flex align-items-center mb-1">
+                            <div class="col-5">
+                                <strong>Lv3</strong> <a href="#" class="text-info" title="Production Table"><i class="fa-solid fa-chart-simple"></i></a>
+                                                            </div>
+                            <div class="col-2 text-center ps-1">
+                                                                                                            <button type="submit" name="downgrade" id="downgrade" value="rpgc" class="btn btn-sm btn-outline-primary form-control border-warning-subtle" title="Downgrade">
+                                            <i class="fa-solid fa-angles-down"></i>
+                                        </button>
+                                                                                                </div>
+                            <div class="col-5 align-content-end ps-2">
+                                                                    <button type="submit" name="upgradeResource" value="rpgc" class="btn btn-sm btn-outline-primary form-control border-success-subtle">Build</button>
+                                                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-uw-3 mb-3">
+                            <div class="card buildQueue">
+                    <div class="imageWrapper">
+                        <img src="../../images/resource/resource_resourceStorage.webp" class="card-img-top" loading="lazy"
+                             data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                             data-bs-content="Basic resource storage extension. Can be controlled under planet settings. ">
+                                                <div class="infoOverlay">
+                            <strong>Resource Storage</strong>
+                        </div>
+                    </div>
+                    <div class="card-body disabled ">
+
+                                                    <div class="row mt-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="w-100 text-end">
+                                                                                    <i class="fa-solid fa-cubes"></i> <span title="163.840.000 Aslit">164M</span>
+                                                                                                                            <i class="fa-solid fa-dice-d20"></i> <span title="16.384.000 Crlit">16.4M</span>
+                                                                                                                                                            </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="flex-grow-1">
+                                        
+                                                                            </div>
+                                    <div class="text-end">
+                                                                                    <i class="fa-solid fa-clock"></i> 03M 17S
+                                                                            </div>
+                                </div>
+                            </div>
+                        
+                        <div class="d-flex align-items-center mb-1">
+                            <div class="col-5">
+                                <strong>Lv15</strong> <a href="#" class="text-info" title="Production Table"><i class="fa-solid fa-chart-simple"></i></a>
+                                                            </div>
+                            <div class="col-2 text-center ps-1">
+                                                                                                            <button type="submit" name="downgrade" id="downgrade" value="rprs" class="btn btn-sm btn-outline-primary form-control border-warning-subtle" title="Downgrade">
+                                            <i class="fa-solid fa-angles-down"></i>
+                                        </button>
+                                                                                                </div>
+                            <div class="col-5 align-content-end ps-2">
+                                                                    <button type="submit" name="upgradeResource" value="rprs" class="btn btn-sm btn-outline-primary form-control border-success-subtle">Build</button>
+                                                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-uw-3 mb-3">
+                            <div class="card buildQueue">
+                    <div class="imageWrapper">
+                        <img src="../../images/resource/resource_resourceBunker.webp" class="card-img-top" loading="lazy"
+                             data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                             data-bs-content="Secure resource storage extension. Protects 1.2% + 0.4% for every level built, based on the resource storage. Malfunctions, if energy is insufficient. ">
+                                                <div class="infoOverlay">
+                            <strong>Resource Bunker</strong>
+                        </div>
+                    </div>
+                    <div class="card-body disabled ">
+
+                                                    <div class="row mt-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="w-100 text-end">
+                                                                                    <i class="fa-solid fa-cubes"></i> <span title="25.000 Aslit">25K</span>
+                                                                                                                            <i class="fa-solid fa-dice-d20"></i> <span title="5.000 Crlit">5K</span>
+                                                                                                                            <i class="fa-solid fa-soap"></i> <span title="2.500 Iopla">2.5K</span>
+                                                                                                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="d-flex font-sm reDi">
+                                    <div class="flex-grow-1">
+                                                                                    <i class="fa-solid fa-bolt-lightning"></i> <span class="text-warning" title="100 Energy">↓100</span>
+                                        
+                                                                            </div>
+                                    <div class="text-end">
+                                                                                    <i class="fa-solid fa-clock"></i> 01S
+                                                                            </div>
+                                </div>
+                            </div>
+                        
+                        <div class="d-flex align-items-center mb-1">
+                            <div class="col-5">
+                                <strong>Lv0</strong> <a href="#" class="text-info" title="Production Table"><i class="fa-solid fa-chart-simple"></i></a>
+                                                            </div>
+                            <div class="col-2 text-center ps-1">
+                                                                                                                                </div>
+                            <div class="col-5 align-content-end ps-2">
+                                                                    <button type="submit" name="upgradeResource" value="rrb" class="btn btn-sm btn-outline-primary form-control border-success-subtle">Build</button>
+                                                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                <div id="notice-wrapper" class="text-info">
+                    </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-12 text-end">
+            <a href="/game/planet/production" class="btn btn-sm btn-outline-info"><i class="fa-solid fa-gears"></i> Planet Production</a>
+        </div>
+    </div>
+</form>                        </div>
+                                    </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <div class="card alphaBox alphaBorder gameContentCard">
+                    <div class="row p-2">
+                        <span class="bt text-center mb-2">PLANETS</span>
+                                                    <a href="?sp=421252" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 161.430.351<br/>C: 217.601.696<br/>I: 40.842.542<br/>S: 841.863<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Cyllene<br/>
+                                    25-25-2:3-3-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=219722" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 122.088.147<br/>C: 110.799.505<br/>I: 27.543.111<br/>S: 1.588.156<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Carpo<br/>
+                                    14-1-13:3-2-2
+                                </div>
+                            </a>
+                                                    <a href="?sp=131878" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 155.029.557<br/>C: 132.221.245<br/>I: 13.328.748<br/>S: 27.757.713<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Aitne<br/>
+                                    8-21-10:2-1-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=171312" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 2.052.701.915<br/>C: 909.874.400<br/>I: 676.331.468<br/>S: 5.714.213<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Albiorix<br/>
+                                    11-4-20:3-2-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=93861" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 2.357.166.865<br/>C: 477.617.362<br/>I: 419.318.244<br/>S: 13.226.765<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Aegir<br/>
+                                    6-15-2:1-3-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=139704" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 52.634.560<br/>C: 197.092.180<br/>I: 606.989.034<br/>S: 16.943.259<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Isonoe<br/>
+                                    9-7-25:1-2-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=155168" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 2.291.726.833<br/>C: 419.617.150<br/>I: 65.709.186<br/>S: 10.651.508<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Aegaeon<br/>
+                                    10-5-22:3-3-2
+                                </div>
+                            </a>
+                                                    <a href="?sp=219706" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 129.804.756<br/>C: 2.644.644.835<br/>I: 176.650.259<br/>S: 8.529.291<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Calypso<br/>
+                                    14-1-13:1-3-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=158467" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 1.369.555.393<br/>C: 528.369.709<br/>I: 148.320.588<br/>S: 17.219.092<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Autonoe<br/>
+                                    10-10-20:1-2-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=152392" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 437.636.296<br/>C: 1.080.750.429<br/>I: 163.537.953<br/>S: 9.346.851<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Cressida<br/>
+                                    10-1-20:1-2-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=120667" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 1.335.668.703<br/>C: 266.996.749<br/>I: 598.235.867<br/>S: 10.669.091<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Adrastea<br/>
+                                    8-4-20:1-2-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=155093" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 675.430.683<br/>C: 452.014.886<br/>I: 1.126.090.430<br/>S: 10.315.358<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Iapetus<br/>
+                                    10-5-20:1-2-2
+                                </div>
+                            </a>
+                                                    <a href="?sp=154572" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 590.992.180<br/>C: 784.379.702<br/>I: 100.594.405<br/>S: 13.627.749<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Callisto<br/>
+                                    10-4-25:3-2-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=154437" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 406.232.585<br/>C: 215.750.191<br/>I: 837.624.634<br/>S: 23.149.534<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Io<br/>
+                                    10-4-20:3-2-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=154420" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 269.965.136<br/>C: 321.127.508<br/>I: 430.180.273<br/>S: 663.048<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBoxDense">
+                                    Gaia<br/>
+                                    10-4-20:1-3-1
+                                </div>
+                            </a>
+                                            </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start alphaBoxDense" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+     id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Quickpanel Overview <i
+                    class="fa-solid fa-bolt-lightning"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Currently no abnormal activities.</p>
+    </div>
+</div>
+
+<div class="text-light mb-3">
+    <div class="container footer">
+        <hr/>
+        <div class="d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg text-center footer-nav my-0 py-0">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="/tac">Terms & Conditions</a>
+                    <a class="nav-link" href="https://discord.com/invite/CqGdCY5BKy" target="_blank">Contact</a>
+                    <a class="nav-link" href="/game/wiki">Wiki</a>
+                </div>
+            </nav>
+        </div>
+        <div class="col-12 text-center">
+            <span>VoidVerse - v0.0.03b | Copyright © 2023 Hakto</span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="toast-wrapper">
+    <div class="toast align-items-center" role="alert">
+        <div class="d-flex">
+            <div class="toast-body">
+
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
