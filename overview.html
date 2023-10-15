@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Gaia [10-4-20:1-3-1]</title>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="cache-control" content="max-age=0" />
+            <link rel="stylesheet" href="/build/339.d59f7a02.css">
+                    <link rel="stylesheet" href="/build/globalsuw.d623a9bf.css">
+            
+            
+        <script src="/build/runtime.9a71ee5d.js" defer></script><script src="/build/888.7cc4d866.js" defer></script><script src="/build/678.b3a081e5.js" defer></script><script src="/build/appGame.5da4fd20.js" defer></script>
+    </head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="text-bg-dark py-1 headerNavigation">
+    <div class="container navpanel">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <ul class="nav justify-content-start">
+                    <li class="nav-item" title="Server Time GMT+2">
+                        <span class="px-3"><i class="fa-solid fa-clock"></i> <span id="gameDate"></span> <span id="gameClock" data-serverTime="1697381967">00:00:00</span></span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="px-3" title="Current Server"><i class="fa-solid fa-atom"></i> #1 Era</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/game/ranking"><i class="fa-solid fa-chart-simple"></i> Ranking </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/3eDHmThaKf" target="_blank">Discord <i class="fa-brands fa-discord"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/game/settings">SCORP <i class="fa-solid fa-user-astronaut"></i></a>
+                    </li>
+                    <li class="nav-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <a class="nav-link" href="#">Quickpanel <i class="fa-solid fa-bolt-lightning"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-light pb-3">
+    <div class="container content">
+        <div class="row pb-1">
+            <div class="col-12">
+                <div class="alphaBox alphaBorder topGameNav">
+                    <div class="d-flex justify-content-between py-1 d-none d-sm-none d-md-none d-lg-flex d-xxl-flex">
+                        <div class="pt-1"></div>
+                        <div class="pt-1">
+                            <i class="fa-solid fa-sun"></i> System 10-4-20
+                        </div>
+                        <div class="pt-1">
+                            <select id="planetSelect" class="alphaBox m-0 px-1 border-0 bg-transparent"
+                                    onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                                <option selected>P: Gaia</option>
+                                                                                                                <option value="?sp=421252">
+                                                Cyllene [25-25-2:3-3-1]
+                                            </option>
+                                                                                <option value="?sp=219722">
+                                                Carpo [14-1-13:3-2-2]
+                                            </option>
+                                                                                <option value="?sp=131878">
+                                                Aitne [8-21-10:2-1-1]
+                                            </option>
+                                                                                <option value="?sp=171312">
+                                                Albiorix [11-4-20:3-2-3]
+                                            </option>
+                                                                                <option value="?sp=93861">
+                                                Aegir [6-15-2:1-3-3]
+                                            </option>
+                                                                                <option value="?sp=139704">
+                                                Isonoe [9-7-25:1-2-3]
+                                            </option>
+                                                                                <option value="?sp=155168">
+                                                Aegaeon [10-5-22:3-3-2]
+                                            </option>
+                                                                                <option value="?sp=219706">
+                                                Calypso [14-1-13:1-3-1]
+                                            </option>
+                                                                                <option value="?sp=158467">
+                                                Autonoe [10-10-20:1-2-1]
+                                            </option>
+                                                                                <option value="?sp=152392">
+                                                Cressida [10-1-20:1-2-1]
+                                            </option>
+                                                                                <option value="?sp=120667">
+                                                Adrastea [8-4-20:1-2-1]
+                                            </option>
+                                                                                <option value="?sp=155093">
+                                                Iapetus [10-5-20:1-2-2]
+                                            </option>
+                                                                                <option value="?sp=154572">
+                                                Callisto [10-4-25:3-2-3]
+                                            </option>
+                                                                                <option value="?sp=154437">
+                                                Io [10-4-20:3-2-3]
+                                            </option>
+                                                                                <option value="?sp=154420">
+                                                Gaia [10-4-20:1-3-1]
+                                            </option>
+                                                                                                </select>
+                        </div>
+                        <div class="pt-1">
+                            <i class="fa-solid fa-earth-asia"></i> Planet 1-3-1
+                        </div>
+                        <div class="pt-1"></div>
+                    </div>
+                    <div class="row d-flex d-sm-flex d-md-flex d-lg-none d-xxl-none text-center">
+                        <div class="col-6">
+                            <i class="fa-solid fa-sun"></i> System 10-4-20
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-earth-asia"></i> Planet 1-3-1
+                        </div>
+                        <div class="col-12">
+                            <select id="planetSelect" class="alphaBox m-0 px-1 border-0 bg-transparent"
+                                    onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                                <option selected>P: Gaia</option>
+                                                                                                            <option value="?sp=421252">
+                                            Cyllene [25-25-2:3-3-1]
+                                        </option>
+                                                                            <option value="?sp=219722">
+                                            Carpo [14-1-13:3-2-2]
+                                        </option>
+                                                                            <option value="?sp=131878">
+                                            Aitne [8-21-10:2-1-1]
+                                        </option>
+                                                                            <option value="?sp=171312">
+                                            Albiorix [11-4-20:3-2-3]
+                                        </option>
+                                                                            <option value="?sp=93861">
+                                            Aegir [6-15-2:1-3-3]
+                                        </option>
+                                                                            <option value="?sp=139704">
+                                            Isonoe [9-7-25:1-2-3]
+                                        </option>
+                                                                            <option value="?sp=155168">
+                                            Aegaeon [10-5-22:3-3-2]
+                                        </option>
+                                                                            <option value="?sp=219706">
+                                            Calypso [14-1-13:1-3-1]
+                                        </option>
+                                                                            <option value="?sp=158467">
+                                            Autonoe [10-10-20:1-2-1]
+                                        </option>
+                                                                            <option value="?sp=152392">
+                                            Cressida [10-1-20:1-2-1]
+                                        </option>
+                                                                            <option value="?sp=120667">
+                                            Adrastea [8-4-20:1-2-1]
+                                        </option>
+                                                                            <option value="?sp=155093">
+                                            Iapetus [10-5-20:1-2-2]
+                                        </option>
+                                                                            <option value="?sp=154572">
+                                            Callisto [10-4-25:3-2-3]
+                                        </option>
+                                                                            <option value="?sp=154437">
+                                            Io [10-4-20:3-2-3]
+                                        </option>
+                                                                            <option value="?sp=154420">
+                                            Gaia [10-4-20:1-3-1]
+                                        </option>
+                                                                                                </select>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+        <div class="row text-center resourceDisplay reDi pt-2">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 257.892.980/h<br/>Storage: 2.9B">
+                    <i class="fa-solid fa-cubes"></i> Aslit <span id="resOneCurr" class="lbr ucph " data-ratePerHour="257892979.53692" data-storage="2949120000" data-baseValue="473596737.34945">473.596.737</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 259.334.927/h<br/>Storage: 2B">
+                    <i class="fa-solid fa-dice-d20"></i> Crlit <span id="resTwoCurr" class="lbr ucph " data-storage="1966080000" data-ratePerHour="259334926.75211" data-baseValue="406678396.48458">406.678.396</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 158.068.255/h<br/>Storage: 1.3B">
+                    <i class="fa-solid fa-soap"></i> Iopla <span id="resThreeCurr" class="lbr ucph " data-ratePerHour="158068254.96007" data-storage="1310720000" data-baseValue="470996380.88591">470.996.381</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 29.315.688/h<br/>Storage: 328M">
+                    <i class="fa-solid fa-hurricane"></i> SEM <span  id="resFourCurr" class="lbr ucph " data-ratePerHour="29315688.077681" data-storage="327680000" data-baseValue="18190008.764222">18.190.009</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="E-Gen: <span class='text-success'> 11.947</span> MW <br/>E-Use: <span class='text-error'> -11.668 </span> MW">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                                            Energy <span class="lbr">279</span>
+                                    </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 187/h">
+                    <i class="fa-solid fa-guarani-sign"></i> G.E.L.D. <span class="lbr ucph " data-ratePerHour="186.63664663892" data-baseValue="43887.877641026" title="Galactic Electronic Luminary Denomination">43.888</span>
+                </div>
+            </div>
+        </div>
+        <div class="row py-1">
+            <div class="col-12">
+                <div class="alphaBox alphaBorder p-2 text-center">
+                    <span>Full testmode activated (500x res, low buildtime, low flight time), since some players decided to "test" a bug with 400m+ resources ;(</span><br/>
+                    <span>Feel free to test Fleetconstruction etc. - </span><span class="text-warning">Noobprotection disabled now.</span>
+                </div>
+            </div>
+        </div>
+        <div class="row py-1">
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <div class="card alphaBox alphaBorder mb-3 pb-2">
+    <div class="card-header">
+        <div class="d-flex justify-content-center">
+            <span class="h6 mb-0 text-bold">PLANET</span>
+        </div>
+    </div>
+    <ul class="list-group list-group-flush gameNavigation">
+        <li class="list-group-item active nbg">
+            <a href="/game/command">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Overview
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/resources">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-shapes"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Resources
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/infrastructure">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Infrastructure
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/shipyard">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-shuttle-space"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Shipyard
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/defense">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Defense
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="card alphaBox alphaBorder mb-3 pb-2">
+    <div class="card-header">
+        <div class="d-flex justify-content-center">
+            <span class="h6 mb-0 text-bold">NETWORK</span>
+        </div>
+    </div>
+    <ul class="list-group list-group-flush gameNavigation">
+        <li class="list-group-item ">
+            <a href="/game/research">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-flask-vial"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Research
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/assembly">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-dice-d6"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Assembly
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/government">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-users-line"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Government
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/market">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-bitcoin-sign"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Market
+                    </div>
+                </div>
+            </a>
+        </li>
+            </ul>
+</div>
+<div class="card alphaBox alphaBorder mb-3 pb-2">
+    <div class="card-header">
+        <div class="d-flex justify-content-center">
+            <span class="h6 mb-0 text-bold">COMMS</span>
+        </div>
+    </div>
+    <ul class="list-group list-group-flush gameNavigation">
+        <li class="list-group-item ">
+            <a href="/game/fleet">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Fleet
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/fleetcontrol">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Fleet Movement
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/commander">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Commanders
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/records">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Reports (0)
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/galaxy">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Galaxy
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/inbox">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Inbox (0)
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/alliance">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Alliance
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a href="/game/achievement">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Achievements
+                    </div>
+                </div>
+            </a>
+        </li>
+        <hr class="m-0 mx-2 bg-white">
+        <li class="list-group-item">
+            <a href="/game/version">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-file-pen"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Updates
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="/game/bugtracker">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <i class="fa-solid fa-bugs"></i>
+                    </div>
+                    <div class="col-9 px-0">
+                        Bugtracker
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="card alphaBox alphaBorder mb-3 py-2 text-center">
+    Online: 4<br/>
+    Load: 1,48%
+</div>            </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-8">
+                <div class="card alphaBox alphaBorder gameContentCard">
+                                            <div class="card-header text-center">
+                            <span class="h6 mb-0 text-bold">COMMAND</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row py-2 mb-3">
+    <div class="col-12">
+        <div class="d-flex">
+            <div class="p-2 flex-grow-1">
+                <h3>Planet - Gaia</h3>
+            </div>
+            <div class="p-2">
+                <a href="planet" class="link-light"><i class="fa-solid fa-gears"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 col-lg-7 col-xl-8 ps-4">
+        <ul class="nlp reDi">
+            <li>
+                Solar System: Ytufosep V
+            </li>
+            <li>
+                Star Distance: 58%
+            </li>
+            <li>
+                Diameter: 12800 km
+            </li>
+            <li>
+                Fields: 244/246
+            </li>
+                            <li>
+                    Bonus: None
+                </li>
+                    </ul>
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <h5><b>Planet Points</b></h5>
+                <ul class="nlp">
+                    <li>
+                        Economy: 4.094.518 Points
+                    </li>
+                    <li>
+                        Infrastructure: 3.554.331 Points
+                    </li>
+                    <li>
+                        Fleet: 1.396.916 Points
+                    </li>
+                    <li>
+                        Defense: 0 Points
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-5 col-xl-4">
+        <div class="planetImageWrapper p-4">
+            <img class="circularImage" src="/images/planet/36.webp">
+        </div>
+    </div>
+</div>
+<div class="row mb-4">
+    <div class="col-lg-12 col-xl-6 text-center mb-3">
+        <h4>Construction Queues</h4>
+        <hr>
+        <div class="row">
+            <div class="col-4 text-center">
+                <h6>Resource</h6>
+                <img alt="" class="img-fluid rounded alphaBorder" src="/images/offline_placeholder.webp">
+            </div>
+            <div class="col-4 text-center">
+                <h6>Infrastructure</h6>
+                <img alt="" class="img-fluid rounded alphaBorder" src="/images/offline_placeholder.webp">
+            </div>
+            <div class="col-4 text-center">
+                <h6>Labs</h6>
+                <img alt="" class="img-fluid rounded alphaBorder" src="/images/offline_placeholder.webp">
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 col-xl-6 text-center mb-3">
+        <h4>Armory Queues</h4>
+        <hr>
+        <div class="row">
+            <div class="col-4 text-center">
+                <h6>Commander</h6>
+                <img alt="" class="img-fluid rounded alphaBorder" src="/images/offline_placeholder.webp">
+            </div>
+            <div class="col-4 text-center">
+                <h6>Fleet</h6>
+                <img alt="" class="img-fluid rounded alphaBorder" src="/images/offline_placeholder.webp">
+            </div>
+            <div class="col-4 text-center">
+                <h6>Defense</h6>
+                <img alt="" class="img-fluid rounded alphaBorder" src="/images/offline_placeholder.webp">
+            </div>
+        </div>
+    </div>
+</div>                        </div>
+                                    </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <div class="card alphaBox alphaBorder gameContentCard">
+                    <div class="row p-2">
+                        <span class="bt text-center mb-2">PLANETS</span>
+                                                    <a href="?sp=421252" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 157.736.452<br/>C: 199.968.579<br/>I: 37.750.054<br/>S: 834.902<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Cyllene<br/>
+                                    25-25-2:3-3-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=219722" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 120.430.874<br/>C: 98.973.234<br/>I: 26.115.867<br/>S: 1.588.156<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Carpo<br/>
+                                    14-1-13:3-2-2
+                                </div>
+                            </a>
+                                                    <a href="?sp=131878" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 152.596.821<br/>C: 131.945.906<br/>I: 13.151.433<br/>S: 27.756.968<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Aitne<br/>
+                                    8-21-10:2-1-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=171312" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 2.048.294.680<br/>C: 909.180.480<br/>I: 675.942.596<br/>S: 5.653.877<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Albiorix<br/>
+                                    11-4-20:3-2-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=93861" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 2.311.269.650<br/>C: 470.258.933<br/>I: 415.032.684<br/>S: 11.972.705<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Aegir<br/>
+                                    6-15-2:1-3-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=139704" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 47.983.375<br/>C: 192.550.303<br/>I: 598.844.110<br/>S: 16.476.848<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Isonoe<br/>
+                                    9-7-25:1-2-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=155168" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 2.266.701.143<br/>C: 415.651.928<br/>I: 63.371.272<br/>S: 10.178.237<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Aegaeon<br/>
+                                    10-5-22:3-3-2
+                                </div>
+                            </a>
+                                                    <a href="?sp=219706" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 128.908.249<br/>C: 2.641.875.075<br/>I: 176.125.422<br/>S: 8.443.008<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Calypso<br/>
+                                    14-1-13:1-3-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=158467" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 1.313.029.220<br/>C: 517.816.524<br/>I: 141.803.696<br/>S: 15.932.459<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Autonoe<br/>
+                                    10-10-20:1-2-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=152392" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 436.616.735<br/>C: 1.077.839.716<br/>I: 162.941.079<br/>S: 9.248.979<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Cressida<br/>
+                                    10-1-20:1-2-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=120667" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 1.327.745.086<br/>C: 266.037.516<br/>I: 597.638.992<br/>S: 10.571.575<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Adrastea<br/>
+                                    8-4-20:1-2-1
+                                </div>
+                            </a>
+                                                    <a href="?sp=155093" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 675.430.683<br/>C: 452.014.886<br/>I: 1.126.090.430<br/>S: 10.315.358<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Iapetus<br/>
+                                    10-5-20:1-2-2
+                                </div>
+                            </a>
+                                                    <a href="?sp=154572" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 584.275.073<br/>C: 766.217.202<br/>I: 96.662.056<br/>S: 12.989.875<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Callisto<br/>
+                                    10-4-25:3-2-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=154437" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 394.741.422<br/>C: 204.529.083<br/>I: 820.314.193<br/>S: 22.010.137<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBox">
+                                    Io<br/>
+                                    10-4-20:3-2-3
+                                </div>
+                            </a>
+                                                    <a href="?sp=154420" class="link-light text-center" data-bs-container="body" data-bs-trigger="hover focus"
+                               data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                               data-bs-content="A: 473.596.737<br/>C: 406.678.396<br/>I: 470.996.381<br/>S: 18.190.009<br/>">
+                                <div class="col-12 py-0 px-2 alphaBorder mb-1 alphaBoxDense">
+                                    Gaia<br/>
+                                    10-4-20:1-3-1
+                                </div>
+                            </a>
+                                            </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start alphaBoxDense" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+     id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Quickpanel Overview <i
+                    class="fa-solid fa-bolt-lightning"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Currently no abnormal activities.</p>
+    </div>
+</div>
+
+<div class="text-light mb-3">
+    <div class="container footer">
+        <hr/>
+        <div class="d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg text-center footer-nav my-0 py-0">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="/tac">Terms & Conditions</a>
+                    <a class="nav-link" href="https://discord.com/invite/CqGdCY5BKy" target="_blank">Contact</a>
+                    <a class="nav-link" href="/game/wiki">Wiki</a>
+                </div>
+            </nav>
+        </div>
+        <div class="col-12 text-center">
+            <span>VoidVerse - v0.0.03b | Copyright © 2023 Hakto</span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="toast-wrapper">
+    <div class="toast align-items-center" role="alert">
+        <div class="d-flex">
+            <div class="toast-body">
+
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
