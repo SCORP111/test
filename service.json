@@ -1,0 +1,358 @@
+[
+	{
+		"accessories": null,
+		"addition_links": {
+			"build_history": {
+				"absolute": false,
+				"href": "/api/v2.0/projects/service/repositories/service/artifacts/sha256:59d0441448dd969795b67048fe58cfa542a86fe0634f488ffb00c40ae3e93ef7/additions/build_history"
+			},
+			"vulnerabilities": {
+				"absolute": false,
+				"href": "/api/v2.0/projects/service/repositories/service/artifacts/sha256:59d0441448dd969795b67048fe58cfa542a86fe0634f488ffb00c40ae3e93ef7/additions/vulnerabilities"
+			}
+		},
+		"digest": "sha256:59d0441448dd969795b67048fe58cfa542a86fe0634f488ffb00c40ae3e93ef7",
+		"extra_attrs": {
+			"architecture": "amd64",
+			"author": "",
+			"config": {
+				"Entrypoint": [
+					"/bin/sh",
+					"-c",
+					"java ${ENV_JVM_ARGS} ${ENV_APP_ARGS}"
+				],
+				"Env": [
+					"PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+					"JAVA_HOME=/opt/java/openjdk",
+					"LANG=en_US.UTF-8",
+					"LANGUAGE=en_US:en",
+					"LC_ALL=en_US.UTF-8",
+					"JAVA_VERSION=jdk-17.0.8.1+1",
+					"ENV_JVM_ARGS=-Djava.awt.headless=true -Xms128m -Xmx128m -XX:+DisableExplicitGC -XX:+UseStringDeduplication -XX:+PrintFlagsFinal -Xlog:gc*,gc+age=trace,gc+promotion=debug,gc+ergo*=trace,gc+stringdedup:file=/app/gc.log:time,level,tags:filesize=10M,filecount=5 -agentlib:jdwp=transport=dt_socket,address=*:5005,server=y,suspend=n -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/app/oom/app_oom.hprof",
+					"ENV_APP_ARGS=-Dspring.config.additional-location=file:/app/config/ org.springframework.boot.loader.JarLauncher"
+				],
+				"Labels": {
+					"de.dvinci.featureList": ""
+				},
+				"WorkingDir": "/app/"
+			},
+			"created": "2023-10-04T15:44:40.998210277+02:00",
+			"os": "linux"
+		},
+		"icon": "sha256:0048162a053eef4d4ce3fe7518615bef084403614f8bca43b40ae2e762e11e06",
+		"id": 8650,
+		"labels": null,
+		"manifest_media_type": "application/vnd.docker.distribution.manifest.v2+json",
+		"media_type": "application/vnd.docker.container.image.v1+json",
+		"project_id": 22,
+		"pull_time": "2023-10-20T00:01:19.197Z",
+		"push_time": "2023-10-04T13:44:45.768Z",
+		"references": null,
+		"repository_id": 76,
+		"scan_overview": {
+			"application/vnd.security.vulnerability.report; version=1.1": {
+				"complete_percent": 100,
+				"duration": 78,
+				"end_time": "2023-10-20T00:01:22.000Z",
+				"report_id": "ee62e6a0-db8a-4fed-92ff-e3cb40fa17ff",
+				"scan_status": "Success",
+				"scanner": {
+					"name": "Trivy",
+					"vendor": "Aqua Security",
+					"version": "v0.44.0"
+				},
+				"severity": "Critical",
+				"start_time": "2023-10-20T00:00:04.000Z",
+				"summary": {
+					"fixable": 15,
+					"summary": {
+						"Critical": 2,
+						"High": 7,
+						"Medium": 8
+					},
+					"total": 17
+				}
+			}
+		},
+		"size": 152196397,
+		"tags": [
+			{
+				"artifact_id": 8650,
+				"id": 3807,
+				"immutable": false,
+				"name": "2023.20.15.production",
+				"pull_time": "0001-01-01T00:00:00.000Z",
+				"push_time": "2023-10-04T13:44:45.787Z",
+				"repository_id": 76
+			}
+		],
+		"type": "IMAGE"
+	},
+	{
+		"accessories": null,
+		"addition_links": {
+			"build_history": {
+				"absolute": false,
+				"href": "/api/v2.0/projects/service/repositories/service/artifacts/sha256:b27dceee1aeb02f3b3b9b252d68a9869691b315552b17bcdc49d98c36e188196/additions/build_history"
+			},
+			"vulnerabilities": {
+				"absolute": false,
+				"href": "/api/v2.0/projects/service/repositories/service/artifacts/sha256:b27dceee1aeb02f3b3b9b252d68a9869691b315552b17bcdc49d98c36e188196/additions/vulnerabilities"
+			}
+		},
+		"digest": "sha256:b27dceee1aeb02f3b3b9b252d68a9869691b315552b17bcdc49d98c36e188196",
+		"extra_attrs": {
+			"architecture": "amd64",
+			"author": "",
+			"config": {
+				"Entrypoint": [
+					"/bin/sh",
+					"-c",
+					"java ${ENV_JVM_ARGS} ${ENV_APP_ARGS}"
+				],
+				"Env": [
+					"PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+					"JAVA_HOME=/opt/java/openjdk",
+					"LANG=en_US.UTF-8",
+					"LANGUAGE=en_US:en",
+					"LC_ALL=en_US.UTF-8",
+					"JAVA_VERSION=jdk-17.0.8.1+1",
+					"ENV_JVM_ARGS=-Djava.awt.headless=true -Xms128m -Xmx128m -XX:+DisableExplicitGC -XX:+UseStringDeduplication -XX:+PrintFlagsFinal -Xlog:gc*,gc+age=trace,gc+promotion=debug,gc+ergo*=trace,gc+stringdedup:file=/app/gc.log:time,level,tags:filesize=10M,filecount=5 -agentlib:jdwp=transport=dt_socket,address=*:5005,server=y,suspend=n -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/app/oom/app_oom.hprof",
+					"ENV_APP_ARGS=-Dspring.config.additional-location=file:/app/config/ org.springframework.boot.loader.JarLauncher"
+				],
+				"Labels": {
+					"de.dvinci.featureList": ""
+				},
+				"WorkingDir": "/app/"
+			},
+			"created": "2023-09-28T15:07:22.640601552+02:00",
+			"os": "linux"
+		},
+		"icon": "sha256:0048162a053eef4d4ce3fe7518615bef084403614f8bca43b40ae2e762e11e06",
+		"id": 8616,
+		"labels": null,
+		"manifest_media_type": "application/vnd.docker.distribution.manifest.v2+json",
+		"media_type": "application/vnd.docker.container.image.v1+json",
+		"project_id": 22,
+		"pull_time": "2023-10-20T00:01:26.072Z",
+		"push_time": "2023-09-28T13:07:27.561Z",
+		"references": null,
+		"repository_id": 76,
+		"scan_overview": {
+			"application/vnd.security.vulnerability.report; version=1.1": {
+				"complete_percent": 100,
+				"duration": 85,
+				"end_time": "2023-10-20T00:01:29.000Z",
+				"report_id": "b663d4ef-e9d7-4429-bb61-0c769aea8c47",
+				"scan_status": "Success",
+				"scanner": {
+					"name": "Trivy",
+					"vendor": "Aqua Security",
+					"version": "v0.44.0"
+				},
+				"severity": "Critical",
+				"start_time": "2023-10-20T00:00:04.000Z",
+				"summary": {
+					"fixable": 15,
+					"summary": {
+						"Critical": 2,
+						"High": 7,
+						"Medium": 8
+					},
+					"total": 17
+				}
+			}
+		},
+		"size": 152196373,
+		"tags": [
+			{
+				"artifact_id": 8616,
+				"id": 3788,
+				"immutable": false,
+				"name": "2023.20.14.production",
+				"pull_time": "0001-01-01T00:00:00.000Z",
+				"push_time": "2023-09-28T13:07:27.576Z",
+				"repository_id": 76
+			}
+		],
+		"type": "IMAGE"
+	},
+	{
+		"accessories": null,
+		"addition_links": {
+			"build_history": {
+				"absolute": false,
+				"href": "/api/v2.0/projects/service/repositories/service/artifacts/sha256:a833818a0a17f809767f8a9d20c53eb874b70911d01e87f41b610dfa735d1681/additions/build_history"
+			},
+			"vulnerabilities": {
+				"absolute": false,
+				"href": "/api/v2.0/projects/service/repositories/service/artifacts/sha256:a833818a0a17f809767f8a9d20c53eb874b70911d01e87f41b610dfa735d1681/additions/vulnerabilities"
+			}
+		},
+		"digest": "sha256:a833818a0a17f809767f8a9d20c53eb874b70911d01e87f41b610dfa735d1681",
+		"extra_attrs": {
+			"architecture": "amd64",
+			"author": "",
+			"config": {
+				"Entrypoint": [
+					"/bin/sh",
+					"-c",
+					"java ${ENV_JVM_ARGS} ${ENV_APP_ARGS}"
+				],
+				"Env": [
+					"PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+					"JAVA_HOME=/opt/java/openjdk",
+					"LANG=en_US.UTF-8",
+					"LANGUAGE=en_US:en",
+					"LC_ALL=en_US.UTF-8",
+					"JAVA_VERSION=jdk-17.0.8.1+1",
+					"ENV_JVM_ARGS=-Djava.awt.headless=true -Xms128m -Xmx128m -XX:+DisableExplicitGC -XX:+UseStringDeduplication -XX:+PrintFlagsFinal -Xlog:gc*,gc+age=trace,gc+promotion=debug,gc+ergo*=trace,gc+stringdedup:file=/app/gc.log:time,level,tags:filesize=10M,filecount=5 -agentlib:jdwp=transport=dt_socket,address=*:5005,server=y,suspend=n -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/app/oom/app_oom.hprof",
+					"ENV_APP_ARGS=-Dspring.config.additional-location=file:/app/config/ org.springframework.boot.loader.JarLauncher"
+				],
+				"Labels": {
+					"de.dvinci.featureList": ""
+				},
+				"WorkingDir": "/app/"
+			},
+			"created": "2023-09-15T14:39:19.900933866+02:00",
+			"os": "linux"
+		},
+		"icon": "sha256:0048162a053eef4d4ce3fe7518615bef084403614f8bca43b40ae2e762e11e06",
+		"id": 8461,
+		"labels": null,
+		"manifest_media_type": "application/vnd.docker.distribution.manifest.v2+json",
+		"media_type": "application/vnd.docker.container.image.v1+json",
+		"project_id": 22,
+		"pull_time": "2023-10-20T00:01:33.634Z",
+		"push_time": "2023-09-15T12:39:25.370Z",
+		"references": null,
+		"repository_id": 76,
+		"scan_overview": {
+			"application/vnd.security.vulnerability.report; version=1.1": {
+				"complete_percent": 100,
+				"duration": 92,
+				"end_time": "2023-10-20T00:01:36.000Z",
+				"report_id": "fdef3b83-8b42-47cc-8454-2ffd58f8637c",
+				"scan_status": "Success",
+				"scanner": {
+					"name": "Trivy",
+					"vendor": "Aqua Security",
+					"version": "v0.44.0"
+				},
+				"severity": "Critical",
+				"start_time": "2023-10-20T00:00:04.000Z",
+				"summary": {
+					"fixable": 27,
+					"summary": {
+						"Critical": 5,
+						"High": 10,
+						"Medium": 14
+					},
+					"total": 29
+				}
+			}
+		},
+		"size": 154944487,
+		"tags": [
+			{
+				"artifact_id": 8461,
+				"id": 3694,
+				"immutable": false,
+				"name": "2023.19.13.production",
+				"pull_time": "0001-01-01T00:00:00.000Z",
+				"push_time": "2023-09-15T12:39:25.383Z",
+				"repository_id": 76
+			}
+		],
+		"type": "IMAGE"
+	},
+	{
+		"accessories": null,
+		"addition_links": {
+			"build_history": {
+				"absolute": false,
+				"href": "/api/v2.0/projects/service/repositories/service/artifacts/sha256:fd8609975c2d08d8e6f5d0fd42919921564102bfa15b7ce560d07e0b21d7c3e3/additions/build_history"
+			},
+			"vulnerabilities": {
+				"absolute": false,
+				"href": "/api/v2.0/projects/service/repositories/service/artifacts/sha256:fd8609975c2d08d8e6f5d0fd42919921564102bfa15b7ce560d07e0b21d7c3e3/additions/vulnerabilities"
+			}
+		},
+		"digest": "sha256:fd8609975c2d08d8e6f5d0fd42919921564102bfa15b7ce560d07e0b21d7c3e3",
+		"extra_attrs": {
+			"architecture": "amd64",
+			"author": "",
+			"config": {
+				"Entrypoint": [
+					"/bin/sh",
+					"-c",
+					"java ${ENV_JVM_ARGS} ${ENV_APP_ARGS}"
+				],
+				"Env": [
+					"PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+					"JAVA_HOME=/opt/java/openjdk",
+					"LANG=en_US.UTF-8",
+					"LANGUAGE=en_US:en",
+					"LC_ALL=en_US.UTF-8",
+					"JAVA_VERSION=jdk-17.0.8+7",
+					"ENV_JVM_ARGS=-Djava.awt.headless=true -Xms128m -Xmx128m -XX:+DisableExplicitGC -XX:+UseStringDeduplication -XX:+PrintFlagsFinal -Xlog:gc*,gc+age=trace,gc+promotion=debug,gc+ergo*=trace,gc+stringdedup:file=/app/gc.log:time,level,tags:filesize=10M,filecount=5 -agentlib:jdwp=transport=dt_socket,address=*:5005,server=y,suspend=n -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/app/oom/app_oom.hprof",
+					"ENV_APP_ARGS=-Dspring.config.additional-location=file:/app/config/ -Dspring.profiles.active=docker org.springframework.boot.loader.JarLauncher"
+				],
+				"Labels": {
+					"de.dvinci.featureList": ""
+				},
+				"WorkingDir": "/app/"
+			},
+			"created": "2023-08-22T15:31:45.990417481+02:00",
+			"os": "linux"
+		},
+		"icon": "sha256:0048162a053eef4d4ce3fe7518615bef084403614f8bca43b40ae2e762e11e06",
+		"id": 8036,
+		"labels": null,
+		"manifest_media_type": "application/vnd.docker.distribution.manifest.v2+json",
+		"media_type": "application/vnd.docker.container.image.v1+json",
+		"project_id": 22,
+		"pull_time": "2023-10-20T00:01:50.923Z",
+		"push_time": "2023-08-22T13:31:51.700Z",
+		"references": null,
+		"repository_id": 76,
+		"scan_overview": {
+			"application/vnd.security.vulnerability.report; version=1.1": {
+				"complete_percent": 100,
+				"duration": 110,
+				"end_time": "2023-10-20T00:01:55.000Z",
+				"report_id": "1caf5f5b-9753-4720-b44f-a86ab6f322f9",
+				"scan_status": "Success",
+				"scanner": {
+					"name": "Trivy",
+					"vendor": "Aqua Security",
+					"version": "v0.44.0"
+				},
+				"severity": "Critical",
+				"start_time": "2023-10-20T00:00:05.000Z",
+				"summary": {
+					"fixable": 36,
+					"summary": {
+						"Critical": 8,
+						"High": 10,
+						"Medium": 20
+					},
+					"total": 38
+				}
+			}
+		},
+		"size": 153130233,
+		"tags": [
+			{
+				"artifact_id": 8036,
+				"id": 3463,
+				"immutable": false,
+				"name": "2023.17.12.production",
+				"pull_time": "0001-01-01T00:00:00.000Z",
+				"push_time": "2023-08-22T13:31:51.722Z",
+				"repository_id": 76
+			}
+		],
+		"type": "IMAGE"
+	}
+]
