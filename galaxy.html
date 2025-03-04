@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>02#Vex | Gaia [5-6-12:3-1-2]</title>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="cache-control" content="max-age=0" />
+
+            <link rel="stylesheet" href="/build/417.53382a9b.css">
+                    <link rel="stylesheet" href="/build/globalsuw.a59e9c47.css">
+            
+            
+                    <script src="/build/runtime.ad0792f6.js" defer></script><script src="/build/250.76eeecbb.js" defer></script><script src="/build/984.a69ef6b1.js" defer></script><script src="/build/appGameGalaxy.628c603e.js" defer></script>
+        
+        
+        
+        <script src="/build/485.19b4d180.js" defer></script><script src="/build/362.c1852477.js" defer></script><script src="/build/appGame.a1d2fedf.js" defer></script>
+    </head>
+
+<body id="gameInterface">
+
+<div class="background"></div>
+
+<div class="text-bg-dark py-1 headerNavigation">
+    <div class="container navpanel">
+        <div class="row">
+            <div class="col-5 col-sm-5 col-md-6 col-lg-6">
+                <ul class="nav justify-content-start">
+                    <li class="nav-item d-none d-sm-none d-md-none d-lg-block" title="Server Time GMT+2">
+                        <span class="px-2"><i class="fa-solid fa-clock"></i> <span id="gameDate"></span> <span id="gameClock" data-serverTime="1741076571">00:00:00</span></span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="px-2" title="Current Server #1 Era"><i class="fa-solid fa-atom"></i> 02#<span class="d-none d-sm-none d-md-none d-lg-inline">Vex</span></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/game/ranking"><i class="fa-solid fa-chart-simple"></i> <span class="d-none d-sm-none d-md-none d-lg-inline">Ranking</span> (3) </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/game/planet/index" title="Production Overview"><i class="fa-solid fa-chart-line"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-7 col-sm-7 col-md-6 col-lg-6">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item d-none d-sm-none d-md-none d-lg-block">
+                        <a class="nav-link" href="https://discord.gg/3eDHmThaKf" target="_blank">Discord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/game/settings">SCORP <i class="fa-solid fa-user-astronaut"></i></a>
+                    </li>
+                    <li class="nav-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <a class="nav-link" href="#"><span class="d-none d-sm-none d-md-none d-lg-inline">Quickpanel</span> <i class="fa-solid fa-bolt-lightning"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout"><span class="d-none d-sm-none d-md-none d-lg-inline">Logout</span> <i class="fa-solid fa-right-from-bracket"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-light pb-3">
+    <div class="container content">
+        <div class="row pb-1">
+            <div class="col-12">
+                <div class="alphaBox alphaBorder topGameNav">
+                    <div class="d-flex justify-content-between py-1 d-none d-sm-none d-md-none d-lg-flex d-xxl-flex">
+                        <div class="pt-1"></div>
+                        <div class="pt-1">
+                            <i class="fa-solid fa-sun"></i> System 5-6-12
+                        </div>
+                        <div class="pt-1">
+                            <select id="planetSelect" class="alphaBox m-0 px-1 border-0 bg-transparent"
+                                    onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                                <option selected>P: Gaia</option>
+                                                                                                            <option value="?sp=9698">
+                                            Colony [3-6-12
+                                            :1-2-2]
+                                        </option>
+                                                                            <option value="?sp=17475">
+                                            A31 | Nythoria [5-6-12
+                                            :1-2-3]
+                                        </option>
+                                                                            <option value="?sp=17489">
+                                            Gaia [5-6-12
+                                            :3-1-2]
+                                        </option>
+                                                                                                </select>
+                        </div>
+                        <div class="pt-1">
+                            <i class="fa-solid fa-earth-asia"></i> Planet 3-1-2
+                        </div>
+                        <div class="pt-1"></div>
+                    </div>
+                    <div class="row d-flex d-sm-flex d-md-flex d-lg-none d-xxl-none text-center">
+                        <div class="col-6">
+                            <i class="fa-solid fa-sun"></i> System 5-6-12
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-earth-asia"></i> Planet 3-1-2
+                        </div>
+                        <div class="col-12">
+                            <select id="planetSelect" class="alphaBox m-0 px-1 border-0 bg-transparent"
+                                    onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                                <option selected>P: Gaia</option>
+                                                                                                            <option value="?sp=9698">
+                                            Colony [3-6-12
+                                            :1-2-2]
+                                        </option>
+                                                                            <option value="?sp=17475">
+                                            A31 | Nythoria [5-6-12
+                                            :1-2-3]
+                                        </option>
+                                                                            <option value="?sp=17489">
+                                            Gaia [5-6-12
+                                            :3-1-2]
+                                        </option>
+                                                                                                </select>
+                        </div>
+                    </div>
+                    <div id="fleetAttackAlert" data-soundEnabled="false" class="gameNotification d-none"
+                         title="You are under attack!">
+                        <a href="/game/fleetcontrol">
+                            <div class="spinner-grow text-danger" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="fleetSpyAlert" class="gameNotification d-none" title="Incoming Spy Probe detected!">
+                        <a href="/game/fleetcontrol">
+                            <div class="spinner-grow text-warning" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="fleetTransportAlert" class="gameNotification d-none" title="Friendly transport fleet underway!">
+                        <a href="/game/fleetcontrol">
+                            <div class="spinner-grow text-info" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </a>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+        <div class="row text-center resourceDisplay reDi pt-2">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 32.674/h<br/>Storage: 720K">
+                    <div class="d-sm-none">
+                        <i class="fa-solid fa-cubes"></i> <span id="resOneCurr" class="ucph "
+                                                                data-ratePerHour="32673.73327205" data-storage="720000"
+                                                                data-baseValue="186831.81889204">186.832</span>
+                    </div>
+                    <div class="d-none d-sm-block">
+                        <i class="fa-solid fa-cubes"></i> Aslit <span id="resOneCurr" class="lbr ucph "
+                                                                      data-ratePerHour="32673.73327205" data-storage="720000"
+                                                                      data-baseValue="186831.81889204">186.832</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 15.159/h<br/>Storage: 480K">
+                    <div class="d-sm-none">
+                        <i class="fa-solid fa-dice-d20"></i> <span id="resTwoCurr" class="ucph "
+                                                                   data-storage="480000" data-ratePerHour="15158.857205366"
+                                                                   data-baseValue="102747.09878134">102.747</span>
+                    </div>
+                    <div class="d-none d-sm-block">
+                        <i class="fa-solid fa-dice-d20"></i> Crlit <span id="resTwoCurr" class="lbr ucph "
+                                                                         data-storage="480000" data-ratePerHour="15158.857205366"
+                                                                         data-baseValue="102747.09878134">102.747</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 6.817/h<br/>Storage: 320K">
+                    <div class="d-sm-none">
+                        <i class="fa-solid fa-soap"></i> <span id="resThreeCurr" class="ucph "
+                                                               data-ratePerHour="6816.7569912545" data-storage="320000"
+                                                               data-baseValue="84082.157533217">84.082</span>
+                    </div>
+                    <div class="d-none d-sm-block">
+                        <i class="fa-solid fa-soap"></i> Iopla <span id="resThreeCurr" class="lbr ucph "
+                                                                     data-ratePerHour="6816.7569912545" data-storage="320000"
+                                                                     data-baseValue="84082.157533217">84.082</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 841/h<br/>Storage: 80K">
+                    <div class="d-sm-none">
+                        <i class="fa-solid fa-hurricane"></i> <span id="resFourCurr" class="ucph "
+                                                                    data-ratePerHour="840.97323592199" data-storage="80000"
+                                                                    data-baseValue="13028.021361353">13.028</span>
+                    </div>
+                    <div class="d-none d-sm-block">
+                        <i class="fa-solid fa-hurricane"></i> SEM <span id="resFourCurr" class="lbr ucph "
+                                                                        data-ratePerHour="840.97323592199" data-storage="80000"
+                                                                        data-baseValue="13028.021361353">13.028</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="E-Gen: <span class='text-powerg'> 4.527</span> MW <br/>E-Use: <span class='text-error'> -4.453 </span> MW">
+                    <div class="d-sm-none">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                                                    <span class="">74</span>
+                                            </div>
+                    <div class="d-none d-sm-block">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                                                    Energy <span class="lbr">74</span>
+                                            </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+                <div class="alphaBox alphaBorder" data-bs-container="body" data-bs-trigger="hover focus"
+                     data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true"
+                     data-bs-content="Rate: 53/h">
+                    <div class="d-sm-none">
+                        <i class="fa-solid fa-guarani-sign"></i> <span class="ucph" data-ratePerHour="52.809254279279"
+                                                                       data-baseValue="165.7088604746"
+                                                                       title="Galactic Electronic Luminary Denomination">166</span>
+                    </div>
+                    <div class="d-none d-sm-block">
+                        <i class="fa-solid fa-guarani-sign"></i> G.E.L.D. <span class="lbr ucph" id="currencyGeld" data-ratePerHour="52.809254279279"
+                                                                                data-baseValue="165.7088604746"
+                                                                                title="Galactic Electronic Luminary Denomination">166</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="row py-1">
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                
+<div class="row">
+    <div class="col-6 col-sm-6 col-md-12 col-lg-12">
+
+        <div class="card alphaBox alphaBorder mb-3 pb-2">
+            <div class="card-header">
+                <div class="d-flex justify-content-center">
+                    <span class="h6 mb-0 text-bold">PLANET</span>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush gameNavigation">
+                <li class="list-group-item  nbg">
+                    <a href="/game/overview">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Overview
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/resources">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-shapes"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Resources
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/infrastructure">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-industry"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Infrastructure
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/shipyard">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-shuttle-space"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Shipyard
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/defense">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-shield"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Defense
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/rocketsilo">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-explosion"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Planetbuster
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-12 col-lg-12">
+
+        <div class="card alphaBox alphaBorder mb-3 pb-2">
+            <div class="card-header">
+                <div class="d-flex justify-content-center">
+                    <span class="h6 mb-0 text-bold">NETWORK</span>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush gameNavigation">
+                <li class="list-group-item ">
+                    <a href="/game/command">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-timeline"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Command
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/research">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-flask-vial"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Research
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/biolab">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-biohazard"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Biolab
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/assembly">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-dice-d6"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Assembly
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/government">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-users-line"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Government
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/market">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-bitcoin-sign"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Trade Hub
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+<div class="card alphaBox alphaBorder mb-3 pb-2">
+    <div class="card-header">
+        <div class="d-flex justify-content-center">
+            <span class="h6 mb-0 text-bold">COMMS</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 col-sm-6 col-md-12 col-lg-12">
+            <ul class="list-group list-group-flush gameNavigation">
+                <li class="list-group-item ">
+                    <a href="/game/fleet">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Fleet
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/fleetcontrol">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Fleet Movement
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/commander">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-user-astronaut"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Commanders
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/records">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Reports (<span data-lastUpdate="0" data-records="0" id="userReports" class="">0</span>)
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-6 col-sm-6 col-md-12 col-lg-12">
+            <ul class="list-group list-group-flush gameNavigation">
+                <li class="list-group-item ">
+                    <a href="/game/galaxy">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-location-crosshairs"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Galaxy
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/inbox">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Inbox (<span data-lastUpdate="0" data-records="0" id="userMessages" class="">0</span>)
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/alliance">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-solid fa-people-group"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Alliance
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="/game/achievement">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="col-9 px-0">
+                                Achievements
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12">
+            <hr class="m-0 mx-2 bg-white">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
+                    <ul class="list-group list-group-flush gameNavigation">
+                        <li class="list-group-item">
+                            <a href="/game/version">
+                                <div class="row">
+                                    <div class="col-3 text-center">
+                                        <i class="fa-solid fa-file-pen"></i>
+                                    </div>
+                                    <div class="col-9 px-0">
+                                        Updates
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
+                    <ul class="list-group list-group-flush gameNavigation">
+                        <li class="list-group-item">
+                            <a href="/game/bugtracker">
+                                <div class="row">
+                                    <div class="col-3 text-center">
+                                        <i class="fa-solid fa-bugs"></i>
+                                    </div>
+                                    <div class="col-9 px-0">
+                                        Bugtracker
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card alphaBox alphaBorder mb-3 py-2 text-center d-none d-sm-none d-md-none d-lg-block">
+    <div class="row mx-3 small">
+        <div class="col-5 text-start">
+            <i class="fa-solid fa-user-astronaut" title="Players"></i> 4
+        </div>
+        <div class="col-7 text-end">
+            8 <i class="fa-solid fa-right-left" title="Fleet Movements"></i>
+        </div>
+        <div class="col-5 text-start">
+            <i class="fa-solid fa-server" title="Server Load"></i> 6,04%
+        </div>
+        <div class="col-7 text-end">
+            25 <i class="fa-solid fa-earth-asia" title="Colonized Planets"></i>
+        </div>
+    </div>
+</div>
+            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-8 mb-3">
+                    <div class="card alphaBox alphaBorder gameContentCard colonyContent">
+                                                    <div class="card-header text-center">
+                                <span class="bt">Galaxy</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row mb-0 galaxyOverview contentWrapper">
+    <div class="col-12 p-1 text-center">
+        <div class="text-secondary mb-1">
+            <h6 class="text-bold">Solar System | 1-1-1 'Maqlojahuufi' |
+                Irregularity: 0%</h6>
+        </div>
+        <form method="post">
+            <div class="col-12 mb-1">
+                <div class="row justify-content-center text-center">
+                    <div class="col-sm-12 col-md-12 col-lg-9 col-xl-8">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-3 alphaBorder">
+                                <div class="input-group input-group-sm">
+                                    <a href="?sc=12-1-1" class="btn text-light text-bold">«</a>
+                                    <input type="text" name="cX" id="cX" class="form-control text-center text-bold" value="1">
+                                    <a href="?sc=2-1-1" class="btn text-light text-bold">»</a>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-12 col-md-12 col-lg-3 alphaBorder">
+                                <div class="input-group input-group-sm text-bold">
+                                    <a href="?sc=1-12-1" class="btn text-light text-bold">«</a>
+                                    <input type="text" name="cY" id="cY" class="form-control text-center text-bold" value="1">
+                                    <a href="?sc=1-2-1" class="btn text-light text-bold">»</a>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-12 col-md-12 col-lg-3 alphaBorder">
+                                <div class="input-group input-group-sm">
+                                    <a href="?sc=1-1-12" class="btn text-light text-bold">«</a>
+                                    <input type="text" name="cZ" id="cZ" class="form-control text-center text-bold" value="1">
+                                    <a href="?sc=1-1-2" class="btn text-light text-bold">»</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" hidden/>
+                </div>
+            </div>
+        </form>
+        <hr class="mb-0">
+        <div class="text-secondary py-1">
+            <b>
+                Fleet Slots: 1/4 |
+                Spy Probes: <span id="probe-spy">2</span>/2 |
+                Scan Probes: <span id="probe-scan">1</span>/1
+            </b>
+        </div>
+    </div>
+    <div class="col-12 mb-3">
+        <ul class="list-group galaxyList">
+            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="1-1-1">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 93%"></i>
+                                1-1-1</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/1" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=1"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=1"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center "  data-coordinate="1-1-2">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 89%"></i>
+                                1-1-2</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/2" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=2"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=2"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="1-1-3">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 81%"></i>
+                                1-1-3</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/3" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=3"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=3"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center "  data-coordinate="1-2-1">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 77%"></i>
+                                1-2-1</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/4" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=4"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=4"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="1-2-2">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 75%"></i>
+                                1-2-2</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/5" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=5"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=5"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center "  data-coordinate="1-2-3">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 73%"></i>
+                                1-2-3</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/6" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=6"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=6"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="1-3-1">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 62%"></i>
+                                1-3-1</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/7" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=7"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=7"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center "  data-coordinate="1-3-2">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-regular fa-circle-dot coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Void | Sun Distance 52%"></i>
+                                1-3-2</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=8"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="1-3-3">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 36%"></i>
+                                1-3-3</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/9" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=9"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=9"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center "  data-coordinate="2-1-1">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 32%"></i>
+                                2-1-1</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/10" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=10"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=10"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="2-1-2">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 30%"></i>
+                                2-1-2</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/11" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=11"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=11"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center "  data-coordinate="2-1-3">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-regular fa-circle-dot coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Void | Sun Distance 23%"></i>
+                                2-1-3</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=12"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="2-2-1">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 18%"></i>
+                                2-2-1</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/13" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=13"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=13"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" data-coordinate="2-2-2">
+                        <div class="planetPosition">
+                            <i class="fa-solid fa-sun" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Solar System Star"></i>
+                            2-2-2 |
+                        </div>
+                        <div class="">
+                            <nav class="navbar galaxyNav bg-transparent p-0">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a aria-current="page" href="#">
+                                            <i class="fa-solid fa-spinner" title="Build Dyson Ring" disabled=""></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="2-2-3">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 17%"></i>
+                                2-2-3</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/15" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=15"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=15"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center "  data-coordinate="2-3-1">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 18%"></i>
+                                2-3-1</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/16" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=16"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=16"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="2-3-2">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 28%"></i>
+                                2-3-2</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/17" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=17"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=17"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center "  data-coordinate="2-3-3">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 31%"></i>
+                                2-3-3</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/18" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=18"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=18"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="3-1-1">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 34%"></i>
+                                3-1-1</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/19" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=19"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=19"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center "  data-coordinate="3-1-2">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 45%"></i>
+                                3-1-2</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/20" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=20"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=20"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="3-1-3">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 58%"></i>
+                                3-1-3</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/21" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=21"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=21"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center "  data-coordinate="3-2-1">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-regular fa-circle-dot coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Void | Sun Distance 69%"></i>
+                                3-2-1</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=22"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="3-2-2">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 74%"></i>
+                                3-2-2</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/23" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=23"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=23"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center "  data-coordinate="3-2-3">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 75%"></i>
+                                3-2-3</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/24" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=24"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=24"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="3-3-1">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 80%"></i>
+                                3-3-1</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/25" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=25"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=25"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center "  data-coordinate="3-3-2">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-regular fa-circle-dot coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Void | Sun Distance 84%"></i>
+                                3-3-2</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=26"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                            
+                                    <li class="list-group-item d-flex justify-content-between align-items-center alphaBoxGalaxy"  data-coordinate="3-3-3">
+                        <div class="">
+                                                            <span class="planetPosition"><i class="fa-solid fa-circle coordinateIcon" data-bs-container="body" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-placement="right"
+                                   data-bs-content="Planet | Sun Distance 92%"></i>
+                                3-3-3</span> |
+                                                    </div>
+
+                        <div class="">
+                            <nav class="navbar galaxyNav galaxyActions bg-transparent p-0">
+                                                                                                            <ul class="navbar-nav">
+                                            <li>
+                                                <a aria-current="page" class="gsf-scan" data-scanreq="/game/galaxy/survey/27" href="#" data-probecost="50"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Planet Survey: 50 G.E.L.D." data-bs-placement="left">
+                                                    <i class="fa-solid fa-satellite"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/galaxy/colonize?planetTarget=27"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Colonize Planet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-rocket"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-current="page" href="/game/fleet/?pid=27"
+                                                   data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="Send Excursion Fleet" data-bs-placement="left">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                                                                                </nav>
+                        </div>
+                    </li>
+                                    </ul>
+    </div>
+    <span class="text-center small">Info: The current galaxy extend has grid of 12.</span>
+    <div id="notice-wrapper"></div>
+</div>
+                            </div>
+                                            </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                    <div class="card alphaBox alphaBorder gameContentCard colonyBox">
+                        <div class="row p-2">
+                            <span class="bt text-center mb-2">PLANETS</span>
+                                                                                            
+                                <a href="?sp=9698" class="link-light text-center" data-planetid="9698" data-bs-container="body" data-bs-trigger="hover focus"
+                                   data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                                   data-bs-content="A: 5.876<br/>C: 5.226<br/>I: 79<br/>S: 2<br/>">
+
+                                    <div style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('/images/planet/68.webp'); background-size: 130%; background-position: left;"
+                                         class="col-12 py-0 px-2 planetCard mb-1 alphaBorder">
+                                        <div class="planetCardName">
+                                            Colony
+                                        </div>
+                                        <span class="small">
+                                    3-6-12:1-2-2
+                                    </span>
+                                    </div>
+                                </a>
+                                                                                            
+                                <a href="?sp=17475" class="link-light text-center" data-planetid="17475" data-bs-container="body" data-bs-trigger="hover focus"
+                                   data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                                   data-bs-content="A: 32.789<br/>C: 37.393<br/>I: 17.197<br/>S: 397<br/>">
+
+                                    <div style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('/images/planet/13.webp'); background-size: 130%; background-position: left;"
+                                         class="col-12 py-0 px-2 planetCard mb-1 alphaBorder">
+                                        <div class="planetCardName">
+                                            A31 | Nythoria
+                                        </div>
+                                        <span class="small">
+                                    5-6-12:1-2-3
+                                    </span>
+                                    </div>
+                                </a>
+                                                                                            
+                                <a href="?sp=17489" class="link-light text-center" data-planetid="17489" data-bs-container="body" data-bs-trigger="hover focus"
+                                   data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true"
+                                   data-bs-content="A: 186.832<br/>C: 102.747<br/>I: 84.082<br/>S: 13.028<br/>">
+
+                                    <div style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('/images/planet/26.webp'); background-size: 130%; background-position: left;"
+                                         class="col-12 py-0 px-2 planetCard mb-1 alphaBorderActive">
+                                        <div class="planetCardName">
+                                            Gaia
+                                        </div>
+                                        <span class="small">
+                                    5-6-12:3-1-2
+                                    </span>
+                                    </div>
+                                </a>
+                                                    </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start alphaBoxDarkBlue border-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+     id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Quickpanel Overview <i
+                class="fa-solid fa-bolt-lightning"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Currently no abnormal activities.</p>
+    </div>
+</div>
+
+<div class="text-light mb-3">
+    <div class="container footer">
+        <hr/>
+        <div class="d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg text-center footer-nav my-0 py-0">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="/tac">Terms & Conditions</a>
+                    <a class="nav-link" href="/contact">Contact</a>
+                    <a class="nav-link" href="/game/wiki">Wiki</a>
+                </div>
+            </nav>
+        </div>
+        <div class="col-12 text-center">
+            <span>VoidVerse - v0.25.3 | Copyright © 2023-2025 Hakto</span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="toast-wrapper">
+    <div class="toast align-items-center" role="alert">
+        <div class="d-flex">
+            <div class="toast-body">
+
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
